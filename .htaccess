@@ -1,0 +1,110 @@
+# -------------------------------------------------
+# Enable rewrite engine
+# -------------------------------------------------
+RewriteEngine On
+
+# -------------------------------------------------
+# 1. Canonicalization: Force HTTPS + www
+# -------------------------------------------------
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/(acme-challenge|cpanel-dcv|pki-validation)/ [NC]
+RewriteRule ^ https://www.bluebyteitsolutions.com%{REQUEST_URI} [L,R=301]
+
+# -------------------------------------------------
+# 2. SEO: Clean URLs
+# -------------------------------------------------
+# Redirect index.html to /
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirect .html URLs to extensionless version
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Fix typo URL variant
+RewriteRule ^best-technolgy-for-ecommerce-in-2025/?$ /best-technology-for-ecommerce-in-2025 [R=301,L,NC]
+
+# Internally rewrite extensionless to .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# -------------------------------------------------
+# 3. Security
+# -------------------------------------------------
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^(?:\.env|\.git|composer\.(json|lock)|wp-config\.php|\.htaccess|readme\.html?)$">
+    Require all denied
+</FilesMatch>
+
+# Block common exploit patterns
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|[|%[0-9A-Z]{0,2})
+RewriteRule ^ - [F,L]
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header unset Server
+    Header always unset X-Powered-By
+</IfModule>
+
+# -------------------------------------------------
+# 4. Performance
+# -------------------------------------------------
+# GZIP compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml \
+    application/xhtml+xml application/rss+xml application/javascript application/x-javascript \
+    application/font-woff2 image/svg+xml
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+    ExpiresByType text/html "access plus 600 seconds"
+    ExpiresByType application/json "access plus 0 seconds"
+    ExpiresByType application/xml "access plus 0 seconds"
+    ExpiresByType text/xml "access plus 0 seconds"
+</IfModule>
+
+# Cache-Control headers
+<IfModule mod_headers.c>
+    <filesMatch "\.(ico|jpe?g|png|gif|swf|webp)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesMatch>
+    <filesMatch "\.(css)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </filesMatch>
+    <filesMatch "\.(js)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </filesMatch>
+    <filesMatch "\.(x?html?|php)$">
+        Header set Cache-Control "max-age=600, private, must-revalidate"
+    </filesMatch>
+    <filesMatch "\.(woff2?|ttf|eot|svg)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </filesMatch>
+</IfModule>
+
+# Disable ETags
+FileETag None
+
+# -------------------------------------------------
+# 5. Error Handling
+# -------------------------------------------------
+ErrorDocument 404 /404
+<Files ".htaccess">
+    Require all denied
+</Files>

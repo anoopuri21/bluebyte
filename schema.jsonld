@@ -1,0 +1,206 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "SoftwareCompany",
+        "ProfessionalService"
+      ],
+      "@id": "https://www.bluebyteitsolutions.com/#organization",
+      "name": "BlueByte IT Solutions",
+      "url": "https://www.bluebyteitsolutions.com",
+      "logo": "https://www.bluebyteitsolutions.com/images/logo-white.webp",
+      "description": "BlueByte IT Solutions is the best custom software development, web development and digital marketing company in Delhi NCR serving clients across India.",
+      "foundingDate": "2024",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-8178838292",
+          "contactType": "Customer Service",
+          "areaServed": "IN",
+          "availableLanguage": [
+            "English",
+            "Hindi"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61580436123773",
+        "https://www.linkedin.com/company/110187139",
+        "https://www.instagram.com/bluebyteitsolutions"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "IT Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Software Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Development (WordPress, Shopify, Custom)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mobile App Development (Android & iOS)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "eCommerce Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital Marketing & SEO Services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Google My Business & Local SEO Optimization"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "UI/UX Design & Branding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://www.bluebyteitsolutions.com/#localbusiness",
+      "name": "BlueByte IT Solutions - Delhi NCR",
+      "image": "https://www.bluebyteitsolutions.com/images/logo-white.webp",
+      "url": "https://www.bluebyteitsolutions.com",
+      "telephone": "+91-8178838292",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "MS 83, Mohan Garden",
+        "addressLocality": "Uttam Nagar",
+        "addressRegion": "DL",
+        "postalCode": "110059",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.6289797,
+        "longitude": 77.0335781
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "00:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Delhi"
+        },
+        {
+          "@type": "State",
+          "name": "Uttar Pradesh"
+        },
+        {
+          "@type": "State",
+          "name": "Haryana"
+        },
+        {
+          "@type": "State",
+          "name": "Punjab"
+        },
+        {
+          "@type": "State",
+          "name": "Rajasthan"
+        }
+      ],
+      "hasMap": "https://maps.app.goo.gl/MusVhXvPfNjpjWPY8",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "87",
+        "reviewCount": "87"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Rakesh Sharma"
+          },
+          "reviewBody": "Best software company in Delhi NCR. Delivered our eCommerce website on time with excellent support.",
+          "datePublished": "2025-01-15"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Priya Singh"
+          },
+          "reviewBody": "Amazing team! Our mobile app and SEO both are ranking on first page now. Highly recommended.",
+          "datePublished": "2025-01-10"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.bluebyteitsolutions.com/#website",
+      "url": "https://www.bluebyteitsolutions.com",
+      "name": "BlueByte IT Solutions",
+      "publisher": {
+        "@id": "https://www.bluebyteitsolutions.com/#organization"
+      }
+    }
+  ]
+}
