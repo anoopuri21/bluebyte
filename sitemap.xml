@@ -80,7 +80,7 @@
 			<image:loc>https://www.bluebyteitsolutions.com/images/blog-4.webp</image:loc>
 	</image:image>
 	<image:image>
-			<image:loc>https://www.bluebyteitsolutions.com/images/blog-1.webp</image:loc>
+			<image:loc>https://www.bluebyteitsolutions.com/images/blog-web-development-guide-2026.svg</image:loc>
 	</image:image>
 	<image:image>
 			<image:loc>https://www.bluebyteitsolutions.com/images/blog-frontend-techs.webp</image:loc>
@@ -249,6 +249,14 @@
 	<priority>1.0</priority>
 	<image:image>
 			<image:loc>https://www.bluebyteitsolutions.com/images/about-video.webp</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://www.bluebyteitsolutions.com/what-is-web-development-complete-beginner-guide-2026</loc>
+	<lastmod>2026-01-22T08:42:51+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://www.bluebyteitsolutions.com/images/blog-web-development-guide-2026.svg</image:loc>
 	</image:image>
 </url>
 <url>
