@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1536" viewBox="0 0 1536 1536" role="img" aria-label="What is Web Development? Complete Beginner Guide (2026)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9fc2ff"/>
+      <stop offset="100%" stop-color="#dbe9ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1536" fill="url(#bg)"/>
+
+  <text x="768" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="110" font-weight="700" fill="#fff" filter="url(#shadow)">What is</text>
+  <text x="350" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="130" font-weight="700" fill="#ff7b22" stroke="#ffffff" stroke-width="10" filter="url(#shadow)">Web</text>
+  <text x="930" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="130" font-weight="700" fill="#1f6ce0" stroke="#ffffff" stroke-width="10" filter="url(#shadow)">Development?</text>
+
+  <rect x="265" y="430" rx="52" ry="52" width="1000" height="118" fill="#f5f8ff" stroke="#7da0db" stroke-width="5"/>
+  <text x="768" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#2f9b58">Complete Beginner Guide (2026)</text>
+
+  <rect x="120" y="885" width="620" height="330" rx="26" fill="#5a93e2"/>
+  <rect x="830" y="865" width="580" height="355" rx="26" fill="#7eb0ea"/>
+  <ellipse cx="1110" cy="1240" rx="150" ry="130" fill="#32a6dc"/>
+  <ellipse cx="1070" cy="1190" rx="58" ry="50" fill="#76c45f"/>
+  <ellipse cx="1160" cy="1280" rx="65" ry="55" fill="#76c45f"/>
+
+  <rect x="360" y="980" width="520" height="360" rx="30" fill="#f2bc59"/>
+  <rect x="620" y="960" width="280" height="300" rx="40" fill="#ec7e2f"/>
+  <circle cx="760" cy="880" r="110" fill="#f6b17d"/>
+  <rect x="615" y="1160" width="145" height="175" rx="35" fill="#376bb2"/>
+  <rect x="760" y="1160" width="145" height="175" rx="35" fill="#376bb2"/>
+
+  <text x="190" y="1270" font-family="Arial, sans-serif" font-size="78" font-weight="700" fill="#f38a2f" stroke="#fff" stroke-width="3">HTML</text>
+  <text x="1175" y="1235" font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="#fff" stroke="#2d5fb6" stroke-width="3">CSS</text>
+  <text x="700" y="1320" font-family="Arial, sans-serif" font-size="104" font-weight="700" fill="#1f63d8">WWW</text>
+</svg>
