@@ -1,3 +1,19 @@
-User-Agent: *
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Google-Extended
+User-agent: Anthropic-ai
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: xAI
+User-agent: xAICrawler
+User-agent: Meta-ExternalAgent
+User-agent: CCBot
 Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /private/
+Disallow: /temp/
 Sitemap: https://www.bluebyteitsolutions.com/sitemap.xml
