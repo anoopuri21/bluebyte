@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subha Yatra Tours & Travels - Explore The World | Tempo Traveller Rental & Tour Packages</title>
+  <meta name="description" content="Subha Yatra Tours & Travels offers premium Tempo Traveller rentals (9 to 26 seater), national and international tour packages, honeymoon trips, adventure tours at best prices.">
+  <meta name="keywords" content="tempo traveller, tour packages, travel agency, holiday packages, tempo traveller rental, delhi tours, india tours">
+  <meta property="og:title" content="Subha Yatra Tours & Travels - Explore The World">
+  <meta property="og:description" content="Premium Tempo Traveller rentals and curated tour packages for unforgettable travel experiences.">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { syne: ['Syne','sans-serif'], inter: ['Inter','sans-serif'], orbitron: ['Orbitron','sans-serif'] },
+        colors: { primary: '#FF6B2C', secondary: '#0EA5E9', dark: '#0F172A', accent: '#06B6D4' }
+      }}
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","name":"Subha Yatra Tours & Travels","url":"https://subhayatra.com","address":{"@type":"PostalAddress","addressLocality":"Delhi","addressCountry":"IN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"50000"}}</script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;overflow-x:hidden;background:#f0f4f8}
+    #page-loader{position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,#0F172A,#1E293B);display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .6s,visibility .6s}
+    #page-loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+    .loader-plane{font-size:3rem;animation:flyPlane 2s ease-in-out infinite}
+    @keyframes flyPlane{0%{transform:translateX(-100px) translateY(20px) rotate(-10deg);opacity:0}50%{transform:translateX(0) translateY(-10px) rotate(0);opacity:1}100%{transform:translateX(100px) translateY(20px) rotate(10deg);opacity:0}}
+    .loader-text{font-family:'Syne',sans-serif;color:#fff;font-size:1.5rem;margin-top:1rem;letter-spacing:3px;animation:pulse 1.5s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+    .glass{background:rgba(255,255,255,.15);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.25);border-radius:1rem}
+    .glass-card{background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.6);border-radius:1rem;transition:all .4s cubic-bezier(.175,.885,.32,1.275)}
+    .glass-card:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(14,165,233,.15);border-color:rgba(6,182,212,.4)}
+    .neon-glow-orange{box-shadow:0 0 20px rgba(255,107,44,.4),0 0 40px rgba(255,107,44,.15)}
+    #particles-js{position:absolute;inset:0;z-index:1}
+    .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;transition:all .4s}
+    .navbar.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(20px);box-shadow:0 4px 30px rgba(0,0,0,.1);padding:.5rem 0}
+    .navbar.scrolled .nav-link{color:#1E293B}.navbar.scrolled .nav-link:hover{color:#FF6B2C}.navbar.scrolled .logo-text{color:#0F172A}
+    .nav-link{color:#fff;text-decoration:none;font-weight:500;position:relative;padding:.5rem 0;font-size:.95rem;transition:color .3s}
+    .nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:linear-gradient(90deg,#FF6B2C,#06B6D4);transition:width .3s}
+    .nav-link:hover::after{width:100%}
+    .dropdown{position:relative}.dropdown-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:220px;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);border-radius:.75rem;box-shadow:0 20px 60px rgba(0,0,0,.15);padding:.5rem 0;opacity:0;visibility:hidden;transition:all .3s;z-index:100;border:1px solid rgba(255,255,255,.5)}
+    .dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+    .dropdown-menu a{display:block;padding:.6rem 1.25rem;color:#334155;text-decoration:none;font-size:.9rem;transition:all .2s}
+    .dropdown-menu a:hover{background:rgba(6,182,212,.1);color:#FF6B2C;padding-left:1.5rem}
+    .hero{min-height:100vh;position:relative;background:linear-gradient(135deg,#0F172A,#1E3A5F 50%,#0C4A6E);display:flex;align-items:center;overflow:hidden}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.1) 50%,rgba(15,23,42,.8));z-index:2}
+    .parallax-mountains{position:absolute;bottom:0;left:0;right:0;height:40%;z-index:3}
+    .search-bar{background:rgba(255,255,255,.12);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.2);border-radius:1rem;padding:1.25rem}
+    .search-bar select,.search-bar input{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:#fff;padding:.75rem 1rem;border-radius:.5rem;font-size:.9rem;width:100%;outline:none}
+    .search-bar select option{color:#1E293B;background:#fff}
+    .search-bar input::placeholder{color:rgba(255,255,255,.6)}
+    .float-badge{animation:floatBadge 3s ease-in-out infinite}
+    @keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    .scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:10;animation:bounce 2s ease-in-out infinite}
+    @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-12px)}}
+    .section-title{font-family:'Syne',sans-serif;font-weight:800;background:linear-gradient(135deg,#0F172A,#0EA5E9 50%,#FF6B2C);background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradientText 4s ease infinite}
+    @keyframes gradientText{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    .vehicle-card{background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.6);border-radius:1.25rem;padding:1.5rem;transition:all .4s cubic-bezier(.175,.885,.32,1.275);position:relative;overflow:hidden}
+    .vehicle-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(transparent,rgba(6,182,212,.1),transparent 30%);animation:shimmer 4s linear infinite;opacity:0;transition:opacity .4s}
+    .vehicle-card:hover::before{opacity:1}
+    .vehicle-card:hover{transform:translateY(-10px);box-shadow:0 25px 60px rgba(6,182,212,.2);border-color:rgba(6,182,212,.5)}
+    @keyframes shimmer{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+    .tour-tab{padding:.6rem 1.25rem;border-radius:2rem;font-size:.9rem;font-weight:500;cursor:pointer;transition:all .3s;border:1px solid #e2e8f0;background:#fff;color:#64748b}
+    .tour-tab.active,.tour-tab:hover{background:linear-gradient(135deg,#FF6B2C,#F97316);color:#fff;border-color:transparent;box-shadow:0 4px 15px rgba(255,107,44,.3)}
+    .tour-card{border-radius:1.25rem;overflow:hidden;background:#fff;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:all .4s cubic-bezier(.175,.885,.32,1.275)}
+    .tour-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(0,0,0,.12)}
+    .tour-card:hover .tour-card-img img{transform:scale(1.1)}
+    .tour-card-img{overflow:hidden;height:200px;position:relative}
+    .tour-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .stats-section{background:linear-gradient(135deg,#0F172A,#1E293B 50%,#0C4A6E);position:relative;overflow:hidden}
+    .stats-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(6,182,212,.15),transparent 50%),radial-gradient(circle at 80% 20%,rgba(255,107,44,.1),transparent 50%)}
+    .stat-card{text-align:center;padding:2rem 1rem;border-radius:1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);transition:all .3s}
+    .stat-card:hover{background:rgba(255,255,255,.1);transform:translateY(-5px);box-shadow:0 10px 30px rgba(6,182,212,.2)}
+    .dest-card{border-radius:1.25rem;overflow:hidden;position:relative;cursor:pointer;transition:transform .4s}
+    .dest-card:hover{transform:scale(1.02)}
+    .dest-card::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.7));transition:background .3s}
+    .dest-card:hover::after{background:linear-gradient(180deg,rgba(255,107,44,.2),rgba(0,0,0,.8))}
+    .dest-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .dest-card:hover img{transform:scale(1.1)}
+    .dest-card-content{position:absolute;bottom:0;left:0;right:0;padding:1.5rem;z-index:2;color:#fff}
+    .ticker-wrapper{overflow:hidden;white-space:nowrap;background:linear-gradient(90deg,#FF6B2C,#F97316,#FF6B2C);padding:.75rem 0}
+    .ticker-content{display:inline-block;animation:ticker 30s linear infinite;color:#fff;font-weight:600}
+    @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .timeline-dot{width:3rem;height:3rem;border-radius:50%;background:linear-gradient(135deg,#FF6B2C,#06B6D4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;position:relative;z-index:1;box-shadow:0 4px 20px rgba(255,107,44,.3)}
+    .testimonial-card{background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.5);border-radius:1.25rem;padding:2rem;text-align:center}
+    .gallery-img{border-radius:1rem;overflow:hidden;cursor:pointer;position:relative;transition:transform .3s}
+    .gallery-img:hover{transform:scale(1.03)}
+    .gallery-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .gallery-img:hover img{transform:scale(1.15)}
+    .gallery-img::after{content:'';position:absolute;inset:0;background:rgba(6,182,212,.3);opacity:0;transition:opacity .3s}
+    .gallery-img:hover::after{opacity:1}
+    .blog-card{border-radius:1.25rem;overflow:hidden;background:#fff;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:all .3s}
+    .blog-card:hover{transform:translateY(-6px);box-shadow:0 15px 40px rgba(0,0,0,.1)}
+    .booking-modal{position:fixed;inset:0;z-index:10000;display:none;align-items:center;justify-content:center;padding:1rem}
+    .booking-modal.active{display:flex}
+    .modal-backdrop{position:absolute;inset:0;background:rgba(15,23,42,.6);backdrop-filter:blur(8px)}
+    .modal-content{position:relative;z-index:1;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.5);border-radius:1.5rem;padding:2rem;max-width:500px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 25px 80px rgba(0,0,0,.2);animation:modalSlideUp .4s ease}
+    @keyframes modalSlideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .lightbox{position:fixed;inset:0;z-index:10001;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;cursor:pointer}
+    .lightbox.active{display:flex}
+    .lightbox img{max-width:90%;max-height:90%;border-radius:1rem}
+    .whatsapp-btn{position:fixed;bottom:1.5rem;right:1.5rem;width:3.5rem;height:3.5rem;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.75rem;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:999;animation:whatsappPulse 2s ease-in-out infinite;text-decoration:none;transition:transform .3s}
+    .whatsapp-btn:hover{transform:scale(1.1)}
+    @keyframes whatsappPulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)}50%{box-shadow:0 4px 30px rgba(37,211,102,.7),0 0 40px rgba(37,211,102,.2)}}
+    .scroll-top-btn{position:fixed;bottom:1.5rem;right:6rem;width:3rem;height:3rem;background:linear-gradient(135deg,#FF6B2C,#F97316);border-radius:50%;display:none;align-items:center;justify-content:center;color:#fff;font-size:1.25rem;box-shadow:0 4px 15px rgba(255,107,44,.3);z-index:999;cursor:pointer;border:none;transition:all .3s}
+    .scroll-top-btn.visible{display:flex}
+    .btn-primary{background:linear-gradient(135deg,#FF6B2C,#F97316);color:#fff;padding:.75rem 1.75rem;border-radius:.75rem;font-weight:600;border:none;cursor:pointer;transition:all .3s;box-shadow:0 4px 15px rgba(255,107,44,.3);display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-size:.95rem}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,107,44,.4)}
+    .btn-secondary{background:transparent;color:#0EA5E9;padding:.65rem 1.5rem;border-radius:.75rem;font-weight:600;border:2px solid #0EA5E9;cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-size:.9rem}
+    .btn-secondary:hover{background:#0EA5E9;color:#fff}
+    .mobile-menu{position:fixed;inset:0;z-index:9999;background:rgba(15,23,42,.98);backdrop-filter:blur(20px);display:none;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem}
+    .mobile-menu.active{display:flex}
+    .mobile-menu a{color:#fff;text-decoration:none;font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:600;transition:color .3s}
+    .mobile-menu a:hover{color:#FF6B2C}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:10000;padding:.5rem}
+    .hamburger span{width:28px;height:3px;background:#fff;border-radius:2px;transition:all .3s}
+    .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,6px)}
+    .hamburger.active span:nth-child(2){opacity:0}
+    .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-6px)}
+    .navbar.scrolled .hamburger span{background:#1E293B}
+    @media(max-width:1023px){.hamburger{display:flex}.nav-links{display:none!important}}
+    .testimonial-swiper .swiper-pagination-bullet{background:#FF6B2C}
+    .testimonial-swiper .swiper-pagination-bullet-active{width:28px;border-radius:5px}
+    .feature-item{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;background:rgba(255,255,255,.06);border-radius:.75rem;border:1px solid rgba(255,255,255,.08);transition:all .3s}
+    .feature-item:hover{background:rgba(255,255,255,.1);border-color:rgba(6,182,212,.3);transform:translateX(5px)}
+    .contact-input{width:100%;padding:.75rem 1rem;border:1px solid #e2e8f0;border-radius:.75rem;font-size:.9rem;transition:all .3s;background:rgba(255,255,255,.8);outline:none}
+    .contact-input:focus{border-color:#06B6D4;box-shadow:0 0 0 3px rgba(6,182,212,.1)}
+    .offer-card{border-radius:1.25rem;overflow:hidden;background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(255,255,255,.85));border:1px solid rgba(255,255,255,.6);transition:all .3s}
+    .offer-card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,.1)}
+    @media(max-width:767px){.hero{min-height:100svh}.search-bar{padding:1rem}.section-title{font-size:1.75rem!important}.whatsapp-btn{width:3rem;height:3rem;font-size:1.5rem;bottom:1rem;right:1rem}.scroll-top-btn{bottom:1rem;right:4.5rem;width:2.5rem;height:2.5rem}.modal-content{padding:1.25rem;border-radius:1rem}}
+  </style>
+</head>
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <div class="loader-plane"><i class="fas fa-plane"></i></div>
+  <div class="loader-text">SUBHA YATRA</div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar" aria-label="Main navigation">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2 text-decoration-none">
+      <svg width="36" height="36" viewBox="0 0 40 40" fill="none" class="drop-shadow-lg">
+        <circle cx="20" cy="20" r="18" stroke="url(#grad1)" stroke-width="2" fill="none"/>
+        <path d="M20 6L20 34M6 20L34 20M10 10L30 30M30 10L10 30" stroke="url(#grad1)" stroke-width="1" opacity="0.3"/>
+        <circle cx="20" cy="20" r="4" fill="#FF6B2C"/>
+        <path d="M20 2L22 8L20 6L18 8Z" fill="#06B6D4"/>
+        <defs><linearGradient id="grad1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#06B6D4"/><stop offset="1" stop-color="#FF6B2C"/></linearGradient></defs>
+      </svg>
+      <span class="logo-text font-syne text-xl font-bold text-white transition-colors">Subha Yatra</span>
+    </a>
+    <div class="nav-links hidden lg:flex items-center gap-6">
+      <a href="#" class="nav-link">Home</a>
+      <div class="dropdown">
+        <a href="#fleet" class="nav-link">Tempo Traveller <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <div class="dropdown-menu">
+          <a href="#fleet">9 Seater Tempo Traveller</a>
+          <a href="#fleet">12 Seater Tempo Traveller</a>
+          <a href="#fleet">16 Seater Tempo Traveller</a>
+          <a href="#fleet">20 Seater Tempo Traveller</a>
+          <a href="#fleet">26 Seater Tempo Traveller</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#packages" class="nav-link">Tour Packages <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <div class="dropdown-menu">
+          <a href="#packages">National Tours</a>
+          <a href="#packages">Honeymoon Packages</a>
+          <a href="#packages">Adventure Tours</a>
+          <a href="#packages">Pilgrimage Tours</a>
+          <a href="#packages">Weekend Getaways</a>
+          <a href="#packages">Group Tours</a>
+          <a href="#packages">Corporate Tours</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#destinations" class="nav-link">Destinations <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <div class="dropdown-menu">
+          <a href="#destinations">North India</a>
+          <a href="#destinations">South India</a>
+          <a href="#destinations">East India</a>
+          <a href="#destinations">West India</a>
+          <a href="#destinations">International</a>
+        </div>
+      </div>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#blog" class="nav-link">Blog</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button onclick="openBookingModal()" class="btn-primary neon-glow-orange text-sm">Book Now</button>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="toggleMobileMenu()">Home</a>
+  <a href="#fleet" onclick="toggleMobileMenu()">Tempo Traveller</a>
+  <a href="#packages" onclick="toggleMobileMenu()">Tour Packages</a>
+  <a href="#destinations" onclick="toggleMobileMenu()">Destinations</a>
+  <a href="#about" onclick="toggleMobileMenu()">About Us</a>
+  <a href="#blog" onclick="toggleMobileMenu()">Blog</a>
+  <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+  <button onclick="openBookingModal();toggleMobileMenu()" class="btn-primary neon-glow-orange mt-4">Book Now</button>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div id="particles-js"></div>
+  <div class="hero-overlay"></div>
+  <div class="parallax-mountains"></div>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+    <div class="text-center mb-8" data-aos="fade-up">
+      <h1 class="font-syne text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-4 hero-title">Explore The World</h1>
+      <h2 class="font-syne text-xl sm:text-2xl md:text-3xl text-cyan-300 font-semibold mb-4 hero-subtitle">Your Journey Begins Here</h2>
+      <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto">Tempo Travellers &bull; Tour Packages &bull; Dream Holidays</p>
+    </div>
+    <!-- Search Bar -->
+    <div class="search-bar max-w-4xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="200">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        <select aria-label="Destination"><option value="">Destination</option><option>Manali</option><option>Kashmir</option><option>Goa</option><option>Kerala</option><option>Rajasthan</option><option>Ladakh</option><option>Dubai</option><option>Thailand</option></select>
+        <input type="date" aria-label="Travel Date">
+        <select aria-label="Travellers"><option value="">Travellers</option><option>1-4</option><option>5-9</option><option>10-16</option><option>17-26</option><option>26+</option></select>
+        <select aria-label="Vehicle Type"><option value="">Vehicle Type</option><option>9 Seater</option><option>12 Seater</option><option>16 Seater</option><option>20 Seater</option><option>26 Seater</option><option>Luxury Car</option></select>
+        <button class="btn-primary w-full justify-center"><i class="fas fa-search"></i> Search</button>
+      </div>
+    </div>
+    <!-- Floating Badges -->
+    <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="400">
+      <div class="float-badge glass px-4 py-2 text-white text-sm font-medium rounded-full flex items-center gap-2"><i class="fas fa-star text-yellow-400"></i> 4.9 Rated</div>
+      <div class="float-badge glass px-4 py-2 text-white text-sm font-medium rounded-full flex items-center gap-2"><i class="fas fa-shuttle-van text-cyan-400"></i> 500+ Vehicles</div>
+      <div class="float-badge glass px-4 py-2 text-white text-sm font-medium rounded-full flex items-center gap-2"><i class="fas fa-globe text-orange-400"></i> 200+ Destinations</div>
+    </div>
+  </div>
+  <div class="scroll-indicator text-white text-2xl"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- Fleet Section -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8" id="fleet">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">Our Fleet &mdash; Travel In Comfort</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">Choose from our wide range of well-maintained tempo travellers and luxury vehicles for a comfortable journey</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <!-- Vehicle 1 -->
+      <div class="vehicle-card" data-aos="fade-up" data-aos-delay="0" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.15">
+        <div class="text-center mb-4">
+          <div class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl flex items-center justify-center text-3xl"><i class="fas fa-shuttle-van text-cyan-600"></i></div>
+          <span class="inline-block bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full mb-2">STANDARD</span>
+          <h3 class="font-syne text-xl font-bold text-gray-800">9 Seater Tempo Traveller</h3>
+          <p class="text-sm text-gray-500">Standard AC</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 mb-4 text-xs text-gray-500">
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-snowflake text-cyan-500"></i> AC</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-music text-purple-500"></i> Music</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-usb text-green-500"></i> USB</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-map-marker-alt text-red-500"></i> GPS</span>
+        </div>
+        <div class="text-center mb-4">
+          <p class="text-2xl font-bold text-gray-800">&#8377;18<span class="text-sm font-normal text-gray-500">/km</span></p>
+          <p class="text-xs text-gray-400">Min 250km/day</p>
+        </div>
+        <div class="flex gap-2">
+          <button class="btn-secondary flex-1 justify-center text-sm" onclick="openBookingModal('9 Seater Tempo Traveller')">View Details</button>
+          <button class="btn-primary flex-1 justify-center text-sm" onclick="openBookingModal('9 Seater Tempo Traveller')">Book Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!-- Vehicle 2 -->
+      <div class="vehicle-card" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.15">
+        <div class="text-center mb-4">
+          <div class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-orange-100 to-red-100 rounded-2xl flex items-center justify-center text-3xl"><i class="fas fa-shuttle-van text-orange-600"></i></div>
+          <span class="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">MOST POPULAR</span>
+          <h3 class="font-syne text-xl font-bold text-gray-800">12 Seater Tempo Traveller</h3>
+          <p class="text-sm text-gray-500">Deluxe AC</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 mb-4 text-xs text-gray-500">
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-snowflake text-cyan-500"></i> AC</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-music text-purple-500"></i> Music</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-usb text-green-500"></i> USB</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-tv text-blue-500"></i> LED TV</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-map-marker-alt text-red-500"></i> GPS</span>
+        </div>
+        <div class="text-center mb-4">
+          <p class="text-2xl font-bold text-gray-800">&#8377;22<span class="text-sm font-normal text-gray-500">/km</span></p>
+          <p class="text-xs text-gray-400">Min 250km/day</p>
+        </div>
+        <div class="flex gap-2">
+          <button class="btn-secondary flex-1 justify-center text-sm" onclick="openBookingModal('12 Seater Tempo Traveller')">View Details</button>
+          <button class="btn-primary flex-1 justify-center text-sm" onclick="openBookingModal('12 Seater Tempo Traveller')">Book Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!-- Vehicle 3 -->
+      <div class="vehicle-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.15">
+        <div class="text-center mb-4">
+          <div class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-purple-100 to-indigo-100 rounded-2xl flex items-center justify-center text-3xl"><i class="fas fa-bus text-purple-600"></i></div>
+          <span class="inline-block bg-purple-100 text-purple-600 text-xs font-bold px-3 py-1 rounded-full mb-2">LUXURY</span>
+          <h3 class="font-syne text-xl font-bold text-gray-800">16 Seater Tempo Traveller</h3>
+          <p class="text-sm text-gray-500">Luxury AC</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 mb-4 text-xs text-gray-500">
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-snowflake text-cyan-500"></i> AC</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-music text-purple-500"></i> Music</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-usb text-green-500"></i> USB</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-tv text-blue-500"></i> LED TV</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-couch text-amber-500"></i> Pushback</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-map-marker-alt text-red-500"></i> GPS</span>
+        </div>
+        <div class="text-center mb-4">
+          <p class="text-2xl font-bold text-gray-800">&#8377;28<span class="text-sm font-normal text-gray-500">/km</span></p>
+          <p class="text-xs text-gray-400">Min 300km/day</p>
+        </div>
+        <div class="flex gap-2">
+          <button class="btn-secondary flex-1 justify-center text-sm" onclick="openBookingModal('16 Seater Tempo Traveller')">View Details</button>
+          <button class="btn-primary flex-1 justify-center text-sm" onclick="openBookingModal('16 Seater Tempo Traveller')">Book Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!-- Vehicle 4 -->
+      <div class="vehicle-card" data-aos="fade-up" data-aos-delay="0" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.15">
+        <div class="text-center mb-4">
+          <div class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl flex items-center justify-center text-3xl"><i class="fas fa-bus text-emerald-600"></i></div>
+          <span class="inline-block bg-emerald-100 text-emerald-600 text-xs font-bold px-3 py-1 rounded-full mb-2">PREMIUM</span>
+          <h3 class="font-syne text-xl font-bold text-gray-800">20 Seater Tempo Traveller</h3>
+          <p class="text-sm text-gray-500">Premium AC</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 mb-4 text-xs text-gray-500">
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-snowflake text-cyan-500"></i> AC</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-music text-purple-500"></i> Music</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-usb text-green-500"></i> USB</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-tv text-blue-500"></i> LED TV</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-couch text-amber-500"></i> Pushback</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-map-marker-alt text-red-500"></i> GPS</span>
+        </div>
+        <div class="text-center mb-4">
+          <p class="text-2xl font-bold text-gray-800">&#8377;32<span class="text-sm font-normal text-gray-500">/km</span></p>
+          <p class="text-xs text-gray-400">Min 300km/day</p>
+        </div>
+        <div class="flex gap-2">
+          <button class="btn-secondary flex-1 justify-center text-sm" onclick="openBookingModal('20 Seater Tempo Traveller')">View Details</button>
+          <button class="btn-primary flex-1 justify-center text-sm" onclick="openBookingModal('20 Seater Tempo Traveller')">Book Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!-- Vehicle 5 -->
+      <div class="vehicle-card" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.15">
+        <div class="text-center mb-4">
+          <div class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center text-3xl"><i class="fas fa-bus-alt text-blue-600"></i></div>
+          <span class="inline-block bg-blue-100 text-blue-600 text-xs font-bold px-3 py-1 rounded-full mb-2">EXECUTIVE</span>
+          <h3 class="font-syne text-xl font-bold text-gray-800">26 Seater Tempo Traveller</h3>
+          <p class="text-sm text-gray-500">Executive AC</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 mb-4 text-xs text-gray-500">
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-snowflake text-cyan-500"></i> AC</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-music text-purple-500"></i> Music</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-usb text-green-500"></i> USB</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-tv text-blue-500"></i> LED TV</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-couch text-amber-500"></i> Pushback</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-map-marker-alt text-red-500"></i> GPS</span>
+        </div>
+        <div class="text-center mb-4">
+          <p class="text-2xl font-bold text-gray-800">&#8377;38<span class="text-sm font-normal text-gray-500">/km</span></p>
+          <p class="text-xs text-gray-400">Min 350km/day</p>
+        </div>
+        <div class="flex gap-2">
+          <button class="btn-secondary flex-1 justify-center text-sm" onclick="openBookingModal('26 Seater Tempo Traveller')">View Details</button>
+          <button class="btn-primary flex-1 justify-center text-sm" onclick="openBookingModal('26 Seater Tempo Traveller')">Book Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!-- Vehicle 6 -->
+      <div class="vehicle-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.15">
+        <div class="text-center mb-4">
+          <div class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-rose-100 to-pink-100 rounded-2xl flex items-center justify-center text-3xl"><i class="fas fa-car text-rose-600"></i></div>
+          <span class="inline-block bg-rose-100 text-rose-600 text-xs font-bold px-3 py-1 rounded-full mb-2">LUXURY</span>
+          <h3 class="font-syne text-xl font-bold text-gray-800">Luxury Cars & SUVs</h3>
+          <p class="text-sm text-gray-500">Innova Crysta, Ertiga & More</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 mb-4 text-xs text-gray-500">
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-snowflake text-cyan-500"></i> AC</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-music text-purple-500"></i> Music</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-usb text-green-500"></i> USB</span>
+          <span class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full"><i class="fas fa-map-marker-alt text-red-500"></i> GPS</span>
+        </div>
+        <div class="text-center mb-4">
+          <p class="text-2xl font-bold text-gray-800">&#8377;14<span class="text-sm font-normal text-gray-500">/km</span></p>
+          <p class="text-xs text-gray-400">Min 250km/day</p>
+        </div>
+        <div class="flex gap-2">
+          <button class="btn-secondary flex-1 justify-center text-sm" onclick="openBookingModal('Luxury Car / SUV')">View Details</button>
+          <button class="btn-primary flex-1 justify-center text-sm" onclick="openBookingModal('Luxury Car / SUV')">Book Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tour Packages Section -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white" id="packages">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">Tour Packages</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">Handcrafted tour packages for every type of traveller. From serene hills to sunny beaches.</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 mb-10" data-aos="fade-up" data-aos-delay="100">
+      <button class="tour-tab active" onclick="switchTab(this,'national')">National</button>
+      <button class="tour-tab" onclick="switchTab(this,'international')">International</button>
+      <button class="tour-tab" onclick="switchTab(this,'honeymoon')">Honeymoon</button>
+      <button class="tour-tab" onclick="switchTab(this,'adventure')">Adventure</button>
+      <button class="tour-tab" onclick="switchTab(this,'pilgrimage')">Pilgrimage</button>
+      <button class="tour-tab" onclick="switchTab(this,'weekend')">Weekend</button>
+      <button class="tour-tab" onclick="switchTab(this,'group')">Group</button>
+      <button class="tour-tab" onclick="switchTab(this,'corporate')">Corporate</button>
+    </div>
+    <!-- National Tab -->
+    <div id="tab-national" class="tour-tab-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div class="tour-card" data-aos="fade-up"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&h=400&fit=crop" alt="Shimla Manali" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">BEST SELLER</span><button class="absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Himachal Pradesh</p><h3 class="font-syne font-bold text-gray-800 mb-1">Shimla &amp; Manali Package</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="text-gray-400 ml-1">4.8 (312 reviews)</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 5N/6D</span><span><i class="fas fa-shuttle-van"></i> Tempo Included</span></div><div class="flex items-center gap-1 text-xs text-gray-400 mb-3"><i class="fas fa-check-circle text-green-500"></i> Hotel <i class="fas fa-check-circle text-green-500 ml-2"></i> Meals <i class="fas fa-check-circle text-green-500 ml-2"></i> Sightseeing</div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;14,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Shimla Manali Package')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="100"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1597074866923-dc0589150bd8?w=600&h=400&fit=crop" alt="Kashmir" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-cyan-500 text-white text-xs font-bold px-2 py-1 rounded-full">TRENDING</span><button class="absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition" aria-label="Wishlist"><i class="fas fa-heart"></i></button></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Jammu &amp; Kashmir</p><h3 class="font-syne font-bold text-gray-800 mb-1">Kashmir Valley Tour</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="text-gray-400 ml-1">4.9 (456 reviews)</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 6N/7D</span><span><i class="fas fa-shuttle-van"></i> Tempo Included</span></div><div class="flex items-center gap-1 text-xs text-gray-400 mb-3"><i class="fas fa-check-circle text-green-500"></i> Hotel <i class="fas fa-check-circle text-green-500 ml-2"></i> Meals <i class="fas fa-check-circle text-green-500 ml-2"></i> Sightseeing</div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;22,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Kashmir Valley Tour')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="200"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1609766934272-60403e4b187c?w=600&h=400&fit=crop" alt="Ladakh" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">ADVENTURE</span><button class="absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition" aria-label="Wishlist"><i class="fas fa-heart"></i></button></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Ladakh</p><h3 class="font-syne font-bold text-gray-800 mb-1">Leh Ladakh Adventure</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="text-gray-400 ml-1">4.7 (289 reviews)</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 8N/9D</span><span><i class="fas fa-shuttle-van"></i> Tempo Included</span></div><div class="flex items-center gap-1 text-xs text-gray-400 mb-3"><i class="fas fa-check-circle text-green-500"></i> Hotel <i class="fas fa-check-circle text-green-500 ml-2"></i> Meals <i class="fas fa-check-circle text-green-500 ml-2"></i> Sightseeing</div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;28,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Leh Ladakh Adventure')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="300"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&h=400&fit=crop" alt="Rajasthan" loading="lazy"><button class="absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition" aria-label="Wishlist"><i class="fas fa-heart"></i></button></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Rajasthan</p><h3 class="font-syne font-bold text-gray-800 mb-1">Rajasthan Royal Tour</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="text-gray-400 ml-1">4.8 (198 reviews)</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 6N/7D</span><span><i class="fas fa-shuttle-van"></i> Tempo Included</span></div><div class="flex items-center gap-1 text-xs text-gray-400 mb-3"><i class="fas fa-check-circle text-green-500"></i> Hotel <i class="fas fa-check-circle text-green-500 ml-2"></i> Meals <i class="fas fa-check-circle text-green-500 ml-2"></i> Sightseeing</div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;17,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Rajasthan Royal Tour')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&h=400&fit=crop" alt="Kerala" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">POPULAR</span><button class="absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition" aria-label="Wishlist"><i class="fas fa-heart"></i></button></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Kerala</p><h3 class="font-syne font-bold text-gray-800 mb-1">Kerala Backwaters &amp; Munnar</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="text-gray-400 ml-1">4.9 (534 reviews)</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 5N/6D</span><span><i class="fas fa-shuttle-van"></i> Tempo Included</span></div><div class="flex items-center gap-1 text-xs text-gray-400 mb-3"><i class="fas fa-check-circle text-green-500"></i> Hotel <i class="fas fa-check-circle text-green-500 ml-2"></i> Meals <i class="fas fa-check-circle text-green-500 ml-2"></i> Sightseeing</div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;15,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Kerala Backwaters')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="100"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&h=400&fit=crop" alt="Goa" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">HOT DEAL</span><button class="absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition" aria-label="Wishlist"><i class="fas fa-heart"></i></button></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Goa</p><h3 class="font-syne font-bold text-gray-800 mb-1">Goa Beach Holiday</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="text-gray-400 ml-1">4.7 (421 reviews)</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 4N/5D</span><span><i class="fas fa-shuttle-van"></i> Tempo Included</span></div><div class="flex items-center gap-1 text-xs text-gray-400 mb-3"><i class="fas fa-check-circle text-green-500"></i> Hotel <i class="fas fa-check-circle text-green-500 ml-2"></i> Meals <i class="fas fa-check-circle text-green-500 ml-2"></i> Sightseeing</div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;11,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Goa Beach Holiday')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="200"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=600&h=400&fit=crop" alt="Chardham" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded-full">SPIRITUAL</span><button class="absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition" aria-label="Wishlist"><i class="fas fa-heart"></i></button></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Uttarakhand</p><h3 class="font-syne font-bold text-gray-800 mb-1">Chardham Yatra</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="text-gray-400 ml-1">4.9 (367 reviews)</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 10N/11D</span><span><i class="fas fa-shuttle-van"></i> Tempo Included</span></div><div class="flex items-center gap-1 text-xs text-gray-400 mb-3"><i class="fas fa-check-circle text-green-500"></i> Hotel <i class="fas fa-check-circle text-green-500 ml-2"></i> Meals <i class="fas fa-check-circle text-green-500 ml-2"></i> Sightseeing</div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;32,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Chardham Yatra')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="300"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&h=400&fit=crop" alt="North East" loading="lazy"><button class="absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition" aria-label="Wishlist"><i class="fas fa-heart"></i></button></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> North East India</p><h3 class="font-syne font-bold text-gray-800 mb-1">North East Explorer</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="text-gray-400 ml-1">4.6 (178 reviews)</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 7N/8D</span><span><i class="fas fa-shuttle-van"></i> Tempo Included</span></div><div class="flex items-center gap-1 text-xs text-gray-400 mb-3"><i class="fas fa-check-circle text-green-500"></i> Hotel <i class="fas fa-check-circle text-green-500 ml-2"></i> Meals <i class="fas fa-check-circle text-green-500 ml-2"></i> Sightseeing</div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;24,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('North East Explorer')">Book Now</button></div></div></div>
+    </div>
+
+    <!-- International Tab -->
+    <div id="tab-international" class="tour-tab-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div class="tour-card" data-aos="fade-up"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop" alt="Dubai" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">BEST SELLER</span></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> UAE</p><h3 class="font-syne font-bold text-gray-800 mb-1">Dubai Explorer</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="text-gray-400 ml-1">4.9</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 4N/5D</span><span><i class="fas fa-plane"></i> Flights Included</span></div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;55,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Dubai Explorer')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="100"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Bali" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">POPULAR</span></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Indonesia</p><h3 class="font-syne font-bold text-gray-800 mb-1">Bali Holiday</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="text-gray-400 ml-1">4.8</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 5N/6D</span><span><i class="fas fa-plane"></i> Flights Included</span></div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;49,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Bali Holiday')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="200"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=600&h=400&fit=crop" alt="Thailand" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-cyan-500 text-white text-xs font-bold px-2 py-1 rounded-full">TRENDING</span></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Thailand</p><h3 class="font-syne font-bold text-gray-800 mb-1">Thailand Adventure</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="text-gray-400 ml-1">4.7</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 5N/6D</span><span><i class="fas fa-plane"></i> Flights Included</span></div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;44,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Thailand Adventure')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="300"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&h=400&fit=crop" alt="Singapore" loading="lazy"></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Singapore</p><h3 class="font-syne font-bold text-gray-800 mb-1">Singapore Delight</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="text-gray-400 ml-1">4.9</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 4N/5D</span><span><i class="fas fa-plane"></i> Flights Included</span></div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;52,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Singapore Delight')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=600&h=400&fit=crop" alt="Europe" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded-full">PREMIUM</span></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Europe</p><h3 class="font-syne font-bold text-gray-800 mb-1">Europe Delight</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="text-gray-400 ml-1">5.0</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 10N/11D</span><span><i class="fas fa-plane"></i> Flights Included</span></div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;1,89,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Europe Delight')">Book Now</button></div></div></div>
+
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="100"><div class="tour-card-img"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop" alt="Maldives" loading="lazy"><span class="absolute top-3 left-3 z-10 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">LUXURY</span></div><div class="p-4"><p class="text-xs text-gray-400 mb-1"><i class="fas fa-map-marker-alt text-orange-500"></i> Maldives</p><h3 class="font-syne font-bold text-gray-800 mb-1">Maldives Luxury</h3><div class="flex items-center gap-1 text-xs text-yellow-500 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="text-gray-400 ml-1">5.0</span></div><div class="flex flex-wrap gap-2 text-xs text-gray-500 mb-3"><span><i class="far fa-calendar"></i> 3N/4D</span><span><i class="fas fa-plane"></i> Flights Included</span></div><div class="flex items-center justify-between"><p class="text-lg font-bold text-gray-800">&#8377;79,999<span class="text-xs font-normal text-gray-400">/person</span></p><button class="btn-primary text-xs px-3 py-2" onclick="openBookingModal('Maldives Luxury')">Book Now</button></div></div></div>
+    </div>
+
+    <!-- Other tabs show national content with different heading -->
+    <div id="tab-honeymoon" class="tour-tab-content hidden text-center py-16"><div class="max-w-md mx-auto glass-card p-8"><i class="fas fa-heart text-4xl text-rose-500 mb-4"></i><h3 class="font-syne text-2xl font-bold text-gray-800 mb-2">Honeymoon Packages</h3><p class="text-gray-500 mb-4">Romantic getaways to Kashmir, Goa, Kerala, Maldives, Bali and more. Customizable for your special trip.</p><button class="btn-primary" onclick="openBookingModal('Honeymoon Package')">Enquire Now</button></div></div>
+    <div id="tab-adventure" class="tour-tab-content hidden text-center py-16"><div class="max-w-md mx-auto glass-card p-8"><i class="fas fa-mountain text-4xl text-emerald-500 mb-4"></i><h3 class="font-syne text-2xl font-bold text-gray-800 mb-2">Adventure Tours</h3><p class="text-gray-500 mb-4">Trekking in Ladakh, river rafting in Rishikesh, paragliding in Manali and more thrilling experiences.</p><button class="btn-primary" onclick="openBookingModal('Adventure Tour')">Enquire Now</button></div></div>
+    <div id="tab-pilgrimage" class="tour-tab-content hidden text-center py-16"><div class="max-w-md mx-auto glass-card p-8"><i class="fas fa-om text-4xl text-purple-500 mb-4"></i><h3 class="font-syne text-2xl font-bold text-gray-800 mb-2">Pilgrimage Tours</h3><p class="text-gray-500 mb-4">Chardham Yatra, Varanasi, Tirupati, Rameshwaram and sacred journeys across India.</p><button class="btn-primary" onclick="openBookingModal('Pilgrimage Tour')">Enquire Now</button></div></div>
+    <div id="tab-weekend" class="tour-tab-content hidden text-center py-16"><div class="max-w-md mx-auto glass-card p-8"><i class="fas fa-umbrella-beach text-4xl text-cyan-500 mb-4"></i><h3 class="font-syne text-2xl font-bold text-gray-800 mb-2">Weekend Getaways</h3><p class="text-gray-500 mb-4">Quick 2-3 day escapes to Rishikesh, Mussoorie, Nainital, Jim Corbett and nearby destinations.</p><button class="btn-primary" onclick="openBookingModal('Weekend Getaway')">Enquire Now</button></div></div>
+    <div id="tab-group" class="tour-tab-content hidden text-center py-16"><div class="max-w-md mx-auto glass-card p-8"><i class="fas fa-users text-4xl text-blue-500 mb-4"></i><h3 class="font-syne text-2xl font-bold text-gray-800 mb-2">Group Tours</h3><p class="text-gray-500 mb-4">Special rates for groups of 10+ travellers. Perfect for family reunions, college trips and community tours.</p><button class="btn-primary" onclick="openBookingModal('Group Tour')">Enquire Now</button></div></div>
+    <div id="tab-corporate" class="tour-tab-content hidden text-center py-16"><div class="max-w-md mx-auto glass-card p-8"><i class="fas fa-building text-4xl text-indigo-500 mb-4"></i><h3 class="font-syne text-2xl font-bold text-gray-800 mb-2">Corporate Tours</h3><p class="text-gray-500 mb-4">Team outings, offsite meetings and corporate retreats. Customized itineraries with professional planning.</p><button class="btn-primary" onclick="openBookingModal('Corporate Tour')">Enquire Now</button></div></div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8" id="about">
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="font-syne text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">Why Choose Subha Yatra?</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">Trusted by over 50,000 happy travellers across India</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+      <div class="stat-card" data-aos="zoom-in"><div class="text-3xl mb-2"><i class="fas fa-shuttle-van text-cyan-400"></i></div><div class="text-2xl sm:text-3xl font-bold text-white counter" data-target="500">0</div><div class="text-xs text-gray-400 mt-1">Vehicles in Fleet</div></div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="100"><div class="text-3xl mb-2"><i class="fas fa-globe text-orange-400"></i></div><div class="text-2xl sm:text-3xl font-bold text-white counter" data-target="200">0</div><div class="text-xs text-gray-400 mt-1">Destinations</div></div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="200"><div class="text-3xl mb-2"><i class="fas fa-smile text-yellow-400"></i></div><div class="text-2xl sm:text-3xl font-bold text-white counter" data-target="50000">0</div><div class="text-xs text-gray-400 mt-1">Happy Travellers</div></div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="300"><div class="text-3xl mb-2"><i class="fas fa-star text-yellow-400"></i></div><div class="text-2xl sm:text-3xl font-bold text-white">4.9/5</div><div class="text-xs text-gray-400 mt-1">Average Rating</div></div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="400"><div class="text-3xl mb-2"><i class="fas fa-trophy text-amber-400"></i></div><div class="text-2xl sm:text-3xl font-bold text-white counter" data-target="15">0</div><div class="text-xs text-gray-400 mt-1">Years Experience</div></div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="500"><div class="text-3xl mb-2"><i class="fas fa-box-open text-purple-400"></i></div><div class="text-2xl sm:text-3xl font-bold text-white counter" data-target="1000">0</div><div class="text-xs text-gray-400 mt-1">Tour Packages</div></div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" data-aos="fade-up">
+      <div class="feature-item"><i class="fas fa-headset text-cyan-400 text-lg"></i><span class="text-white text-sm">24/7 Customer Support</span></div>
+      <div class="feature-item"><i class="fas fa-tag text-green-400 text-lg"></i><span class="text-white text-sm">No Hidden Charges</span></div>
+      <div class="feature-item"><i class="fas fa-map-marked-alt text-orange-400 text-lg"></i><span class="text-white text-sm">GPS Tracked Vehicles</span></div>
+      <div class="feature-item"><i class="fas fa-user-tie text-blue-400 text-lg"></i><span class="text-white text-sm">Expert Driver Allocation</span></div>
+      <div class="feature-item"><i class="fas fa-sliders-h text-purple-400 text-lg"></i><span class="text-white text-sm">Customizable Packages</span></div>
+      <div class="feature-item"><i class="fas fa-bolt text-yellow-400 text-lg"></i><span class="text-white text-sm">Instant Confirmation</span></div>
+      <div class="feature-item"><i class="fas fa-shield-alt text-emerald-400 text-lg"></i><span class="text-white text-sm">Travel Insurance</span></div>
+      <div class="feature-item"><i class="fas fa-credit-card text-rose-400 text-lg"></i><span class="text-white text-sm">EMI Payment Available</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Destinations Grid -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8" id="destinations">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">Destinations That Await You</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">Explore stunning places across India and the world</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[180px] sm:auto-rows-[220px]" data-aos="fade-up">
+      <div class="dest-card md:row-span-2 md:col-span-2" onclick="openBookingModal('Ladakh Tour')">
+        <img src="https://images.unsplash.com/photo-1609766934272-60403e4b187c?w=800&h=600&fit=crop" alt="Ladakh" loading="lazy">
+        <div class="dest-card-content"><h3 class="font-syne text-xl sm:text-2xl font-bold">Ladakh</h3><p class="text-sm text-gray-200">12 Packages</p></div>
+      </div>
+      <div class="dest-card" onclick="openBookingModal('Goa Tour')">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&h=400&fit=crop" alt="Goa" loading="lazy">
+        <div class="dest-card-content"><h3 class="font-syne text-lg font-bold">Goa</h3><p class="text-xs text-gray-200">8 Packages</p></div>
+      </div>
+      <div class="dest-card" onclick="openBookingModal('Rajasthan Tour')">
+        <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&h=400&fit=crop" alt="Rajasthan" loading="lazy">
+        <div class="dest-card-content"><h3 class="font-syne text-lg font-bold">Rajasthan</h3><p class="text-xs text-gray-200">10 Packages</p></div>
+      </div>
+      <div class="dest-card" onclick="openBookingModal('Kerala Tour')">
+        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&h=400&fit=crop" alt="Kerala" loading="lazy">
+        <div class="dest-card-content"><h3 class="font-syne text-lg font-bold">Kerala</h3><p class="text-xs text-gray-200">9 Packages</p></div>
+      </div>
+      <div class="dest-card" onclick="openBookingModal('Kashmir Tour')">
+        <img src="https://images.unsplash.com/photo-1597074866923-dc0589150bd8?w=600&h=400&fit=crop" alt="Kashmir" loading="lazy">
+        <div class="dest-card-content"><h3 class="font-syne text-lg font-bold">Kashmir</h3><p class="text-xs text-gray-200">7 Packages</p></div>
+      </div>
+      <div class="dest-card" onclick="openBookingModal('Manali Tour')">
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&h=400&fit=crop" alt="Manali" loading="lazy">
+        <div class="dest-card-content"><h3 class="font-syne text-lg font-bold">Manali</h3><p class="text-xs text-gray-200">6 Packages</p></div>
+      </div>
+      <div class="dest-card" onclick="openBookingModal('Shimla Tour')">
+        <img src="https://images.unsplash.com/photo-1597074866923-dc0589150bd8?w=600&h=300&fit=crop" alt="Shimla" loading="lazy">
+        <div class="dest-card-content"><h3 class="font-syne text-lg font-bold">Shimla</h3><p class="text-xs text-gray-200">5 Packages</p></div>
+      </div>
+      <div class="dest-card" onclick="openBookingModal('Darjeeling Tour')">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&h=400&fit=crop" alt="Darjeeling" loading="lazy">
+        <div class="dest-card-content"><h3 class="font-syne text-lg font-bold">Darjeeling</h3><p class="text-xs text-gray-200">4 Packages</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Special Offers -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50" id="offers">
+  <div class="ticker-wrapper mb-12 -mx-4 sm:-mx-6 lg:-mx-8">
+    <div class="ticker-content text-sm">
+      <span class="mx-8">&#127775; EARLY BIRD DISCOUNT - 20% OFF on Bookings Before 30 Days</span>
+      <span class="mx-8">&#128293; GROUP SPECIAL - Book 10+ Seats &amp; Get Extra 15% Off</span>
+      <span class="mx-8">&#128149; HONEYMOON PACKAGE - Starting &#8377;24,999 Per Couple</span>
+      <span class="mx-8">&#9889; WEEKEND FLASH SALE - Limited Seats Available</span>
+      <span class="mx-8">&#127775; EARLY BIRD DISCOUNT - 20% OFF on Bookings Before 30 Days</span>
+      <span class="mx-8">&#128293; GROUP SPECIAL - Book 10+ Seats &amp; Get Extra 15% Off</span>
+      <span class="mx-8">&#128149; HONEYMOON PACKAGE - Starting &#8377;24,999 Per Couple</span>
+      <span class="mx-8">&#9889; WEEKEND FLASH SALE - Limited Seats Available</span>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">Special Offers &amp; Deals</h2>
+    </div>
+    <div class="swiper offers-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="offer-card p-6"><div class="flex items-center gap-3 mb-4"><div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl"><i class="fas fa-percentage text-orange-500"></i></div><div><h3 class="font-syne font-bold text-gray-800">Early Bird Discount</h3><p class="text-xs text-gray-500">Book 30 days in advance</p></div></div><p class="text-3xl font-bold text-orange-500 mb-2">20% OFF</p><p class="text-sm text-gray-500 mb-4">Valid on all tour packages and tempo traveller bookings made 30 days before travel date.</p><button class="btn-primary w-full justify-center" onclick="openBookingModal('Early Bird Discount')">Grab Offer</button></div></div>
+        <div class="swiper-slide"><div class="offer-card p-6"><div class="flex items-center gap-3 mb-4"><div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl"><i class="fas fa-users text-blue-500"></i></div><div><h3 class="font-syne font-bold text-gray-800">Group Booking Special</h3><p class="text-xs text-gray-500">10+ seats booking</p></div></div><p class="text-3xl font-bold text-blue-500 mb-2">15% OFF</p><p class="text-sm text-gray-500 mb-4">Special discount for group bookings with 10 or more travellers. Perfect for family and friends.</p><button class="btn-primary w-full justify-center" onclick="openBookingModal('Group Booking')">Grab Offer</button></div></div>
+        <div class="swiper-slide"><div class="offer-card p-6"><div class="flex items-center gap-3 mb-4"><div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center text-2xl"><i class="fas fa-heart text-rose-500"></i></div><div><h3 class="font-syne font-bold text-gray-800">Honeymoon Special</h3><p class="text-xs text-gray-500">For newlyweds</p></div></div><p class="text-3xl font-bold text-rose-500 mb-2">&#8377;24,999</p><p class="text-sm text-gray-500 mb-4">Romantic packages starting at just &#8377;24,999 per couple. Includes stay, meals and sightseeing.</p><button class="btn-primary w-full justify-center" onclick="openBookingModal('Honeymoon Special')">Grab Offer</button></div></div>
+        <div class="swiper-slide"><div class="offer-card p-6"><div class="flex items-center gap-3 mb-4"><div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-2xl"><i class="fas fa-bolt text-yellow-500"></i></div><div><h3 class="font-syne font-bold text-gray-800">Weekend Flash Sale</h3><p class="text-xs text-gray-500">Limited time only</p></div></div><p class="text-3xl font-bold text-yellow-600 mb-2">FLAT 30% OFF</p><p class="text-sm text-gray-500 mb-4">Exclusive weekend deals on select destinations. Hurry, limited seats available at these prices!</p><button class="btn-primary w-full justify-center" onclick="openBookingModal('Flash Sale')">Grab Offer</button></div></div>
+      </div>
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">How It Works</h2>
+      <p class="text-gray-500">Book your dream trip in 5 simple steps</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4">
+      <div class="text-center" data-aos="fade-up" data-aos-delay="0"><div class="timeline-dot mx-auto mb-4"><span>1</span></div><div class="w-12 h-12 mx-auto mb-3 bg-cyan-50 rounded-xl flex items-center justify-center"><i class="fas fa-search text-cyan-600 text-xl"></i></div><h4 class="font-syne font-bold text-gray-800 mb-1">Choose Destination</h4><p class="text-xs text-gray-500">Browse our curated list of destinations</p></div>
+      <div class="text-center" data-aos="fade-up" data-aos-delay="100"><div class="timeline-dot mx-auto mb-4"><span>2</span></div><div class="w-12 h-12 mx-auto mb-3 bg-orange-50 rounded-xl flex items-center justify-center"><i class="far fa-calendar-alt text-orange-600 text-xl"></i></div><h4 class="font-syne font-bold text-gray-800 mb-1">Select Dates</h4><p class="text-xs text-gray-500">Pick your travel dates and group size</p></div>
+      <div class="text-center" data-aos="fade-up" data-aos-delay="200"><div class="timeline-dot mx-auto mb-4"><span>3</span></div><div class="w-12 h-12 mx-auto mb-3 bg-purple-50 rounded-xl flex items-center justify-center"><i class="fas fa-shuttle-van text-purple-600 text-xl"></i></div><h4 class="font-syne font-bold text-gray-800 mb-1">Pick Vehicle</h4><p class="text-xs text-gray-500">Choose your vehicle or tour package</p></div>
+      <div class="text-center" data-aos="fade-up" data-aos-delay="300"><div class="timeline-dot mx-auto mb-4"><span>4</span></div><div class="w-12 h-12 mx-auto mb-3 bg-green-50 rounded-xl flex items-center justify-center"><i class="fas fa-credit-card text-green-600 text-xl"></i></div><h4 class="font-syne font-bold text-gray-800 mb-1">Secure Payment</h4><p class="text-xs text-gray-500">Pay securely online or via UPI</p></div>
+      <div class="text-center" data-aos="fade-up" data-aos-delay="400"><div class="timeline-dot mx-auto mb-4"><span>5</span></div><div class="w-12 h-12 mx-auto mb-3 bg-rose-50 rounded-xl flex items-center justify-center"><i class="fas fa-plane text-rose-600 text-xl"></i></div><h4 class="font-syne font-bold text-gray-800 mb-1">Enjoy Journey!</h4><p class="text-xs text-gray-500">Sit back, relax and enjoy your trip</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">What Our Travellers Say</h2>
+      <p class="text-gray-500">Real reviews from real travellers</p>
+    </div>
+    <div class="swiper testimonial-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="testimonial-card"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white text-2xl font-bold">R</div><div class="flex justify-center gap-1 text-yellow-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-gray-600 text-sm mb-4 italic">"Amazing experience with Subha Yatra! The 12-seater tempo traveller was spotless and the driver was very professional. Our Manali trip was unforgettable."</p><h4 class="font-syne font-bold text-gray-800">Rahul Sharma</h4><p class="text-xs text-gray-400">Shimla-Manali Trip <span class="text-green-500 ml-1"><i class="fas fa-check-circle"></i> Verified</span></p></div></div>
+        <div class="swiper-slide"><div class="testimonial-card"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-orange-400 to-rose-500 flex items-center justify-center text-white text-2xl font-bold">P</div><div class="flex justify-center gap-1 text-yellow-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-gray-600 text-sm mb-4 italic">"Booked a 26-seater for our company outing to Jim Corbett. Everything was perfectly arranged. Will definitely book again for our next trip!"</p><h4 class="font-syne font-bold text-gray-800">Priya Patel</h4><p class="text-xs text-gray-400">Corporate Trip <span class="text-green-500 ml-1"><i class="fas fa-check-circle"></i> Verified</span></p></div></div>
+        <div class="swiper-slide"><div class="testimonial-card"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white text-2xl font-bold">A</div><div class="flex justify-center gap-1 text-yellow-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><p class="text-gray-600 text-sm mb-4 italic">"Our Kashmir honeymoon package was absolutely magical. The houseboat stay, the Gulmarg visit - everything was beyond our expectations. Thank you Subha Yatra!"</p><h4 class="font-syne font-bold text-gray-800">Amit & Sneha</h4><p class="text-xs text-gray-400">Kashmir Honeymoon <span class="text-green-500 ml-1"><i class="fas fa-check-circle"></i> Verified</span></p></div></div>
+        <div class="swiper-slide"><div class="testimonial-card"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center text-white text-2xl font-bold">M</div><div class="flex justify-center gap-1 text-yellow-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-gray-600 text-sm mb-4 italic">"Best travel agency in Delhi! We did the Chardham Yatra with a 16-seater. The pushback seats made the long journey very comfortable. Highly recommended!"</p><h4 class="font-syne font-bold text-gray-800">Meena Gupta</h4><p class="text-xs text-gray-400">Chardham Yatra <span class="text-green-500 ml-1"><i class="fas fa-check-circle"></i> Verified</span></p></div></div>
+        <div class="swiper-slide"><div class="testimonial-card"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-white text-2xl font-bold">V</div><div class="flex justify-center gap-1 text-yellow-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-gray-600 text-sm mb-4 italic">"Took our family of 20 to Rajasthan. The 20-seater was luxurious with LED TV and AC per seat. Kids loved it. Great value for money!"</p><h4 class="font-syne font-bold text-gray-800">Vikram Singh</h4><p class="text-xs text-gray-400">Rajasthan Family Tour <span class="text-green-500 ml-1"><i class="fas fa-check-circle"></i> Verified</span></p></div></div>
+      </div>
+      <div class="swiper-pagination mt-8"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Travel Gallery -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8" id="gallery">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">Travel Gallery</h2>
+      <p class="text-gray-500">Captured moments from our travellers</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-aos="fade-up">
+      <div class="gallery-img h-48 sm:h-56" onclick="openLightbox(this)"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Mountains" loading="lazy"></div>
+      <div class="gallery-img h-48 sm:h-56" onclick="openLightbox(this)"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&h=400&fit=crop" alt="Beach" loading="lazy"></div>
+      <div class="gallery-img h-48 sm:h-56" onclick="openLightbox(this)"><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=400&fit=crop" alt="Heritage" loading="lazy"></div>
+      <div class="gallery-img h-48 sm:h-56" onclick="openLightbox(this)"><img src="https://images.unsplash.com/photo-1535392432937-a27c36ec07b5?w=600&h=400&fit=crop" alt="Wildlife" loading="lazy"></div>
+      <div class="gallery-img h-48 sm:h-56" onclick="openLightbox(this)"><img src="https://images.unsplash.com/photo-1609766934272-60403e4b187c?w=600&h=400&fit=crop" alt="Ladakh" loading="lazy"></div>
+      <div class="gallery-img h-48 sm:h-56" onclick="openLightbox(this)"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&h=400&fit=crop" alt="Kerala" loading="lazy"></div>
+      <div class="gallery-img h-48 sm:h-56" onclick="openLightbox(this)"><img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&h=400&fit=crop" alt="Rajasthan" loading="lazy"></div>
+      <div class="gallery-img h-48 sm:h-56" onclick="openLightbox(this)"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Bali" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50" id="blog">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">Travel Guides &amp; Tips</h2>
+      <p class="text-gray-500">Expert insights for your next adventure</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up">
+      <article class="blog-card"><div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1609766934272-60403e4b187c?w=600&h=300&fit=crop" alt="Ladakh Guide" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div><div class="p-5"><span class="inline-block bg-cyan-100 text-cyan-700 text-xs font-semibold px-2 py-1 rounded-full mb-3">Adventure</span><h3 class="font-syne text-lg font-bold text-gray-800 mb-2">Best Time to Visit Ladakh &mdash; Complete Guide</h3><p class="text-sm text-gray-500 mb-3 line-clamp-2">Everything you need to know about planning your Ladakh trip including best months, road conditions, permits and acclimatization tips.</p><div class="flex items-center justify-between"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white text-xs font-bold">S</div><div><p class="text-xs font-medium text-gray-700">Subha Yatra</p><p class="text-xs text-gray-400">Mar 15, 2026 &bull; 8 min read</p></div></div><a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">Read More &rarr;</a></div></div></article>
+      <article class="blog-card"><div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&h=300&fit=crop" alt="Goa Guide" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div><div class="p-5"><span class="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-2 py-1 rounded-full mb-3">Beach</span><h3 class="font-syne text-lg font-bold text-gray-800 mb-2">Top 10 Things to Do in Goa</h3><p class="text-sm text-gray-500 mb-3 line-clamp-2">From Baga Beach to Old Goa churches, discover the must-visit places, best restaurants and water sports in Goa.</p><div class="flex items-center justify-between"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-gradient-to-br from-orange-400 to-rose-500 flex items-center justify-center text-white text-xs font-bold">S</div><div><p class="text-xs font-medium text-gray-700">Subha Yatra</p><p class="text-xs text-gray-400">Mar 10, 2026 &bull; 6 min read</p></div></div><a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">Read More &rarr;</a></div></div></article>
+      <article class="blog-card"><div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=300&fit=crop" alt="Tempo Traveller Tips" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div><div class="p-5"><span class="inline-block bg-purple-100 text-purple-700 text-xs font-semibold px-2 py-1 rounded-full mb-3">Tips</span><h3 class="font-syne text-lg font-bold text-gray-800 mb-2">Tempo Traveller Tips for Group Travel</h3><p class="text-sm text-gray-500 mb-3 line-clamp-2">How to choose the right tempo traveller, what to pack, and tips for making your group journey comfortable and fun.</p><div class="flex items-center justify-between"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center text-white text-xs font-bold">S</div><div><p class="text-xs font-medium text-gray-700">Subha Yatra</p><p class="text-xs text-gray-400">Mar 5, 2026 &bull; 5 min read</p></div></div><a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">Read More &rarr;</a></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8" id="contact">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">Get In Touch</h2>
+      <p class="text-gray-500">Have questions? We are here to help you plan your perfect trip</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <div data-aos="fade-right">
+        <h3 class="font-syne text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+        <div class="space-y-4 mb-8">
+          <div class="flex items-start gap-4"><div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-map-marker-alt text-orange-500"></i></div><div><h4 class="font-semibold text-gray-800 text-sm">Office Address</h4><p class="text-sm text-gray-500">Karol Bagh, New Delhi, India - 110005</p></div></div>
+          <div class="flex items-start gap-4"><div class="w-10 h-10 bg-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-phone text-cyan-500"></i></div><div><h4 class="font-semibold text-gray-800 text-sm">Phone Number</h4><p class="text-sm text-gray-500">+91 98XXXXXXXX</p></div></div>
+          <div class="flex items-start gap-4"><div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-envelope text-blue-500"></i></div><div><h4 class="font-semibold text-gray-800 text-sm">Email Address</h4><p class="text-sm text-gray-500">info@subhayatra.com</p></div></div>
+          <div class="flex items-start gap-4"><div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-clock text-green-500"></i></div><div><h4 class="font-semibold text-gray-800 text-sm">Business Hours</h4><p class="text-sm text-gray-500">Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p></div></div>
+        </div>
+        <div class="flex gap-3 mb-8">
+          <a href="#" class="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center text-white hover:shadow-lg transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center text-white hover:shadow-lg transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center text-white hover:shadow-lg transition" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/91XXXXXXXXXX" class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white hover:shadow-lg transition" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="rounded-xl overflow-hidden h-48 sm:h-64 bg-gray-200">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5748611942677!2d77.1884741!3d28.6448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029b0bfbce69%3A0x7e7b8bdd5e59df6c!2sKarol%20Bagh%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" title="Office Location"></iframe>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="glass-card p-6 sm:p-8">
+          <h3 class="font-syne text-2xl font-bold text-gray-800 mb-6">Quick Booking Enquiry</h3>
+          <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input type="text" placeholder="Full Name" class="contact-input" required>
+              <input type="tel" placeholder="Phone Number" class="contact-input" required>
+            </div>
+            <input type="email" placeholder="Email Address" class="contact-input" required>
+            <select class="contact-input" required><option value="">Travel Type</option><option>Tempo Traveller Rental</option><option>Tour Package</option><option>Custom Trip</option></select>
+            <input type="text" placeholder="Destination" class="contact-input">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input type="date" class="contact-input" required>
+              <select class="contact-input"><option value="">No. of Travellers</option><option>1-4</option><option>5-9</option><option>10-16</option><option>17-26</option><option>26+</option></select>
+            </div>
+            <select class="contact-input"><option value="">Vehicle Preference</option><option>9 Seater Tempo Traveller</option><option>12 Seater Tempo Traveller</option><option>16 Seater Tempo Traveller</option><option>20 Seater Tempo Traveller</option><option>26 Seater Tempo Traveller</option><option>Luxury Car / SUV</option></select>
+            <textarea placeholder="Special Requirements" class="contact-input" rows="3"></textarea>
+            <button type="submit" class="btn-primary w-full justify-center text-base py-3"><i class="fas fa-paper-plane"></i> Submit Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 pt-16 pb-6 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <svg width="32" height="32" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="url(#grad2)" stroke-width="2" fill="none"/><circle cx="20" cy="20" r="4" fill="#FF6B2C"/><path d="M20 2L22 8L20 6L18 8Z" fill="#06B6D4"/><defs><linearGradient id="grad2" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#06B6D4"/><stop offset="1" stop-color="#FF6B2C"/></linearGradient></defs></svg>
+          <span class="font-syne text-xl font-bold text-white">Subha Yatra</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-4">Your trusted partner for tempo traveller rentals and curated tour packages across India and the world.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-orange-500 hover:text-white transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-red-500 hover:text-white transition" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/91XXXXXXXXXX" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-green-500 hover:text-white transition" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-syne font-bold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-orange-400 transition">Home</a></li>
+          <li><a href="#fleet" class="hover:text-orange-400 transition">Tempo Traveller</a></li>
+          <li><a href="#packages" class="hover:text-orange-400 transition">Tour Packages</a></li>
+          <li><a href="#destinations" class="hover:text-orange-400 transition">Destinations</a></li>
+          <li><a href="#about" class="hover:text-orange-400 transition">About Us</a></li>
+          <li><a href="#contact" class="hover:text-orange-400 transition">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-syne font-bold text-white mb-4">Popular Destinations</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-orange-400 transition">Shimla &amp; Manali</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Kashmir Valley</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Goa Beach Holiday</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Kerala Backwaters</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Leh Ladakh</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Dubai Explorer</a></li>
+          <li><a href="#" class="hover:text-orange-400 transition">Bali Holiday</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-syne font-bold text-white mb-4">Newsletter</h4>
+        <p class="text-sm text-gray-400 mb-4">Subscribe for the latest deals and travel tips</p>
+        <form onsubmit="event.preventDefault();alert('Subscribed successfully!')" class="flex gap-2">
+          <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-sm text-white outline-none focus:border-cyan-500" required>
+          <button type="submit" class="btn-primary text-sm px-4 py-2"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="mt-6">
+          <h4 class="font-syne font-bold text-white mb-3">Contact</h4>
+          <p class="text-sm text-gray-400"><i class="fas fa-phone text-orange-400 mr-2"></i>+91 98XXXXXXXX</p>
+          <p class="text-sm text-gray-400 mt-1"><i class="fas fa-envelope text-cyan-400 mr-2"></i>info@subhayatra.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gray-500">&copy; 2026 Subha Yatra Tours &amp; Travels. All rights reserved.</p>
+      <div class="flex gap-4 text-xs text-gray-500">
+        <a href="#" class="hover:text-gray-300 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-gray-300 transition">Terms &amp; Conditions</a>
+        <a href="#" class="hover:text-gray-300 transition">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Booking Modal -->
+<div class="booking-modal" id="bookingModal">
+  <div class="modal-backdrop" onclick="closeBookingModal()"></div>
+  <div class="modal-content">
+    <div class="flex items-center justify-between mb-6">
+      <h3 class="font-syne text-xl font-bold text-gray-800">Book Your Trip</h3>
+      <button onclick="closeBookingModal()" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 transition" aria-label="Close modal"><i class="fas fa-times"></i></button>
+    </div>
+    <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+      <input type="text" id="modalPackage" placeholder="Package / Vehicle Selected" class="contact-input bg-orange-50 font-medium" readonly>
+      <div class="grid grid-cols-2 gap-3">
+        <input type="text" placeholder="Your Name" class="contact-input" required>
+        <input type="tel" placeholder="Phone Number" class="contact-input" required>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <input type="date" class="contact-input" required>
+        <select class="contact-input"><option value="">Travellers</option><option>1-4</option><option>5-9</option><option>10-16</option><option>17-26</option><option>26+</option></select>
+      </div>
+      <textarea placeholder="Special requirements or message" class="contact-input" rows="3"></textarea>
+      <button type="submit" class="btn-primary w-full justify-center py-3"><i class="fas fa-paper-plane"></i> Send Booking Enquiry</button>
+      <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-green-500 text-white rounded-xl font-semibold hover:bg-green-600 transition"><i class="fab fa-whatsapp text-xl"></i> Chat on WhatsApp</a>
+    </form>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="Gallery Image">
+</div>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<!-- Scroll To Top -->
+<button class="scroll-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+// Page Loader
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.getElementById('page-loader').classList.add('hidden');
+  }, 1500);
+});
+
+// AOS Init
+AOS.init({ duration: 800, once: true, offset: 50 });
+
+// Navbar Scroll
+var navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 80) { navbar.classList.add('scrolled'); }
+  else { navbar.classList.remove('scrolled'); }
+  // Scroll top button
+  var btn = document.getElementById('scrollTopBtn');
+  if (window.scrollY > 600) { btn.classList.add('visible'); }
+  else { btn.classList.remove('visible'); }
+});
+
+// Mobile Menu
+function toggleMobileMenu() {
+  var menu = document.getElementById('mobileMenu');
+  var hamburger = document.getElementById('hamburger');
+  menu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+  document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+}
+
+// Tour Tabs
+function switchTab(btn, tabName) {
+  document.querySelectorAll('.tour-tab').forEach(function(t) { t.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.tour-tab-content').forEach(function(c) { c.classList.add('hidden'); });
+  var target = document.getElementById('tab-' + tabName);
+  if (target) { target.classList.remove('hidden'); }
+}
+
+// Booking Modal
+function openBookingModal(packageName) {
+  document.getElementById('bookingModal').classList.add('active');
+  document.getElementById('modalPackage').value = packageName || '';
+  document.body.style.overflow = 'hidden';
+}
+function closeBookingModal() {
+  document.getElementById('bookingModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { closeBookingModal(); closeLightbox(); } });
+
+// Form Submissions
+function handleBookingSubmit(e) {
+  e.preventDefault();
+  alert('Thank you for your booking enquiry! We will contact you shortly.');
+  closeBookingModal();
+  e.target.reset();
+}
+function handleContactSubmit(e) {
+  e.preventDefault();
+  alert('Thank you for your enquiry! Our team will get back to you within 24 hours.');
+  e.target.reset();
+}
+
+// Lightbox
+function openLightbox(el) {
+  var img = el.querySelector('img');
+  document.getElementById('lightboxImg').src = img.src;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Animated Counters
+function animateCounters() {
+  document.querySelectorAll('.counter').forEach(function(counter) {
+    var target = parseInt(counter.getAttribute('data-target'));
+    var duration = 2000;
+    var start = 0;
+    var startTime = null;
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      counter.textContent = Math.floor(eased * target).toLocaleString('en-IN') + '+';
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+var counterObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) { animateCounters(); counterObserver.disconnect(); }
+  });
+}, { threshold: 0.3 });
+var statsSection = document.querySelector('.stats-section');
+if (statsSection) counterObserver.observe(statsSection);
+
+// Particles.js
+if (typeof particlesJS !== 'undefined') {
+  particlesJS('particles-js', {
+    particles: {
+      number: { value: 60, density: { enable: true, value_area: 800 } },
+      color: { value: ['#06B6D4', '#FF6B2C', '#ffffff'] },
+      shape: { type: 'circle' },
+      opacity: { value: 0.4, random: true },
+      size: { value: 3, random: true },
+      line_linked: { enable: true, distance: 150, color: '#06B6D4', opacity: 0.15, width: 1 },
+      move: { enable: true, speed: 1.5, direction: 'none', random: true, out_mode: 'out' }
+    },
+    interactivity: {
+      detect_on: 'canvas',
+      events: { onhover: { enable: true, mode: 'grab' }, resize: true },
+      modes: { grab: { distance: 140, line_linked: { opacity: 0.3 } } }
+    },
+    retina_detect: true
+  });
+}
+
+// GSAP Animations
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.from('.hero-title', { y: 60, opacity: 0, duration: 1, delay: 1.8 });
+  gsap.from('.hero-subtitle', { y: 40, opacity: 0, duration: 1, delay: 2.1 });
+  gsap.utils.toArray('.vehicle-card').forEach(function(card, i) {
+    gsap.from(card, {
+      scrollTrigger: { trigger: card, start: 'top 85%' },
+      y: 50, opacity: 0, duration: 0.6, delay: i * 0.1
+    });
+  });
+  gsap.utils.toArray('.tour-card').forEach(function(card, i) {
+    gsap.from(card, {
+      scrollTrigger: { trigger: card, start: 'top 85%' },
+      y: 40, opacity: 0, duration: 0.5, delay: (i % 4) * 0.1
+    });
+  });
+}
+
+// Swiper - Testimonials
+new Swiper('.testimonial-swiper', {
+  slidesPerView: 1, spaceBetween: 24, loop: true, autoplay: { delay: 4000, disableOnInteraction: false },
+  pagination: { el: '.testimonial-swiper .swiper-pagination', clickable: true },
+  breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+});
+
+// Swiper - Offers
+new Swiper('.offers-swiper', {
+  slidesPerView: 1, spaceBetween: 20, loop: true, autoplay: { delay: 3500, disableOnInteraction: false },
+  pagination: { el: '.offers-swiper .swiper-pagination', clickable: true },
+  breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+});
+
+// Vanilla Tilt - already handled via data attributes
+</script>
+</body>
+</html>
