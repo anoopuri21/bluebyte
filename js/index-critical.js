@@ -9,7 +9,8 @@
     connection && /2g/.test(connection.effectiveType || "")
   );
 
-  if (saveData || weakNetwork) return;
+  const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  if (saveData || weakNetwork || reducedMotion) return;
 
   let played = false;
 

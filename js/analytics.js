@@ -1,7 +1,9 @@
 (() => {
-  const GA_ID = "G-7J6L90XM1Y";
+  if (typeof window === "undefined" || !document.head) return;
 
-  if (typeof window === "undefined") return;
+  // Injected at build time from GA_MEASUREMENT_ID; analytics stays off when unset.
+  const GA_ID = document.querySelector('meta[name="google-analytics-id"]')?.content?.trim();
+  if (!GA_ID || !/^G-[A-Z0-9]+$/.test(GA_ID)) return;
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function gtag() {
@@ -9,7 +11,7 @@
   };
 
   const script = document.createElement("script");
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_ID)}`;
   script.async = true;
   document.head.appendChild(script);
 

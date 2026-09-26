@@ -7829,3 +7829,44 @@ p {
   font-weight: 500;
   line-height: 26px
 }
+/* Accessible, high-visibility floating WhatsApp action. */
+.whatsapp-float {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10001;
+  display: flex;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 24%);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus-visible {
+  color: #fff;
+  transform: scale(1.08);
+}
+
+.whatsapp-float:focus-visible {
+  outline: 3px solid #034651;
+  outline-offset: 3px;
+}
+
+.whatsapp-float svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float {
+    transition: none;
+  }
+}

@@ -4,12 +4,11 @@
 RewriteEngine On
 
 # -------------------------------------------------
-# 1. Canonicalization: Force HTTPS + www
-# -------------------------------------------------
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^www\. [NC]
+# 1. Canonicalization: Force HTTPS while preserving the configured host
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
 RewriteCond %{REQUEST_URI} !^/\.well-known/(acme-challenge|cpanel-dcv|pki-validation)/ [NC]
-RewriteRule ^ https://www.bluebyteitsolutions.com%{REQUEST_URI} [L,R=301]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # -------------------------------------------------
 # 2. SEO: Clean URLs
@@ -22,8 +21,10 @@ RewriteRule ^index\.html$ / [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
 
-# Fix typo URL variant
-RewriteRule ^best-technolgy-for-ecommerce-in-2025/?$ /best-technology-for-ecommerce-in-2025 [R=301,L,NC]
+# Redirect the retired 2025 misspellings and slugs to the current article URLs
+RewriteRule ^best-technolgy-for-ecommerce-in-2025/?$ /best-technology-for-ecommerce-in-2026 [R=301,L,NC]
+RewriteRule ^best-technology-for-ecommerce-in-2025/?$ /best-technology-for-ecommerce-in-2026 [R=301,L,NC]
+RewriteRule ^top-frontend-technologies-to-use-in-2025/?$ /top-frontend-technologies-to-use-in-2026 [R=301,L,NC]
 
 # Internally rewrite extensionless to .html
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -85,16 +86,16 @@ RewriteRule ^ - [F,L]
         Header set Cache-Control "max-age=2592000, public"
     </filesMatch>
     <filesMatch "\.(css)$">
-        Header set Cache-Control "max-age=31536000, public, immutable"
+        Header set Cache-Control "max-age=604800, public, stale-while-revalidate=86400"
     </filesMatch>
     <filesMatch "\.(js)$">
-        Header set Cache-Control "max-age=31536000, public, immutable"
+        Header set Cache-Control "max-age=604800, public, stale-while-revalidate=86400"
     </filesMatch>
     <filesMatch "\.(x?html?|php)$">
         Header set Cache-Control "max-age=600, private, must-revalidate"
     </filesMatch>
     <filesMatch "\.(woff2?|ttf|eot|svg)$">
-        Header set Cache-Control "max-age=31536000, public, immutable"
+        Header set Cache-Control "max-age=604800, public, stale-while-revalidate=86400"
     </filesMatch>
 </IfModule>
 
