@@ -6,7 +6,20 @@
     "enabled": true
   },
   "assets": {
-    "directory": "./dist"
+    // Static output directory produced by the build command below.
+    // Do not point this at the repository root: wrangler writes its own
+    // `.wrangler/` temp files there, which makes `wrangler dev` reload forever.
+    "directory": "./dist",
+    // /about.html -> /about, /about -> serves about.html, / -> serves index.html
+    "html_handling": "auto-trailing-slash",
+    // Serve 404.html for unmatched routes.
+    "not_found_handling": "404-page"
+  },
+  // Wrangler runs this before every `wrangler deploy` (and `wrangler dev`),
+  // so a plain `npx wrangler deploy` - with no separate build command
+  // configured in Cloudflare Workers Builds - still produces ./dist.
+  "build": {
+    "command": "node scripts/build-dist.mjs"
   },
   "compatibility_flags": [
     "nodejs_compat"
