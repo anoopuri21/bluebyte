@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-IN">
 
 <head>
@@ -367,7 +367,15 @@
                   <div class="contact-form-wrap bg-gray-100 border border-gray-200 rounded-4 p-lg-5 p-4"
                       data-aos="zoom-in" data-aos-duration="400" data-delay="200"><span class="text-gray-900 fw-600 display4-size">Connect with us</span>
                       <div class="contact-form mt-2 pt-lg-3">
-                          <form method="post" action="contactform.php">
+                          <form method="post" action="/api/contact">
+                              <!-- Honeypot: invisible to people, irresistible to
+                                   bots. src/worker.js drops these silently. -->
+                              <div aria-hidden="true"
+                                  style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden">
+                                  <label for="website">Leave this field empty</label>
+                                  <input type="text" id="website" name="website" tabindex="-1"
+                                      autocomplete="off">
+                              </div>
                               <div class="row mb-3">
                                   <div class="col-md-6"><label for="firstName"
                                           class="form-label fw-500 fs-15 text-gray-900">First name</label>
@@ -401,6 +409,20 @@
                                   </svg></button>
                               <div id="formResult" class="mt-3"></div>
                           </form>
+                          <script>
+                              // Shows the outcome after the Worker redirects back
+                              // to /contact?sent=1 or /contact?error=1.
+                              (function () {
+                                  var box = document.getElementById('formResult');
+                                  if (!box) return;
+                                  var params = new URLSearchParams(window.location.search);
+                                  if (params.get('sent') === '1') {
+                                      box.innerHTML = '<div class="alert alert-success" role="alert">Thank you! Your message has been sent. We will get back to you shortly.</div>';
+                                  } else if (params.get('error') === '1') {
+                                      box.innerHTML = '<div class="alert alert-danger" role="alert">Sorry, we could not send your message just now. Please check the form and try again, or email <a href="mailto:info@bluebyteitsolutions.com" style="text-decoration:underline">info@bluebyteitsolutions.com</a>.</div>';
+                                  }
+                              })();
+                          </script>
                       </div>
                   </div>
               </div>

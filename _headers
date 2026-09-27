@@ -1,9 +1,23 @@
+# Security headers for every response.
+#
+# Cache-Control is deliberately NOT set on /*: Cloudflare merges matching
+# blocks by *appending* header values rather than replacing them, so a
+# Cache-Control here would be prepended to the asset rules below and win
+# (RFC 9110: the first max-age occurrence takes precedence), silently
+# disabling all asset caching.
+#
+# Per-page HTML rules are appended by scripts/build-dist.mjs. They have to be
+# generated because the canonical URLs are extensionless (/about, not
+# /about.html - every .html URL 301-redirects via _redirects), so a /*.html
+# rule would never match a real request. Cloudflare allows 100 rules in total;
+# the build script stays inside that budget and warns instead of breaking the
+# deploy if the site ever outgrows it.
+
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
-  Cache-Control: public, max-age=0, must-revalidate
 
 /css/*
   Cache-Control: public, max-age=604800, stale-while-revalidate=86400
@@ -16,6 +30,3 @@
 
 /images/*
   Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
-
-/*.html
-  Cache-Control: public, max-age=0, must-revalidate

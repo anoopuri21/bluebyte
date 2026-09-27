@@ -1,0 +1,23 @@
+# Local development secrets for `wrangler dev`.
+#
+# Copy this file to `.dev.vars` (git-ignored) and fill in ONE delivery option
+# below. In production use `wrangler secret put <NAME>` - never commit values.
+
+# Option 1 - Resend (https://resend.com).
+# Best if you want mail sent from your own domain; requires the FROM_EMAIL
+# domain (no-reply@bluebyteitsolutions.com) to be verified in Resend.
+# RESEND_API_KEY=re_xxxxxxxxxxxxxxxx
+
+# Option 2 - Web3Forms (https://web3forms.com).
+# Free, and needs no email infrastructure: sign up with the address that should
+# receive the messages and paste the access key here.
+# WEB3FORMS_ACCESS_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+# Option 3 - any endpoint that accepts a JSON POST (Slack incoming webhook,
+# Zapier, your own API). Also the easiest way to test locally:
+#   CONTACT_WEBHOOK_URL=http://127.0.0.1:9111/hook
+# CONTACT_WEBHOOK_URL=
+
+# Optional. Extra hosts allowed to submit the form, comma separated.
+# The site's own host is always allowed automatically.
+# ALLOWED_ORIGINS=www.bluebyteitsolutions.com
