@@ -1,69 +1,40 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-IN">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="/images/favicon.png" type="image/png">
-  <!-- Title -->
   <title>IT Company in Delhi | Software &amp; Web Development | BlueByte</title>
-  <meta name="description"
-    content="BlueByte IT Solutions builds custom software, websites and mobile apps for businesses in Delhi NCR and across India. Talk with our team about your next digital product.">
+  <meta name="description" content="BlueByte IT Solutions is an IT company in Delhi building custom software, websites and mobile apps for businesses across Delhi NCR and India. Request a proposal for your next digital product.">
   <meta name="author" content="BlueByte IT Solutions">
-  <meta name="robots" content="index,follow" />
-  <meta property="og:locale" content="en_IN" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="IT Company in Delhi | Software &amp; Web Development | BlueByte" />
-  <meta property="og:description"
-    content="BlueByte IT Solutions builds custom software, websites and mobile apps for businesses in Delhi NCR and across India. Talk with our team about your next digital product." />
-  <meta property="og:site_name" content="BlueByte IT Solutions" />
-  <meta property="og:image" content="{{SITE_URL}}/images/og-image.webp" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="IT Company in Delhi | Software &amp; Web Development | BlueByte" />
-  <meta name="twitter:description"
-    content="BlueByte IT Solutions builds custom software, websites and mobile apps for businesses in Delhi NCR and across India. Talk with our team about your next digital product." />
-  <meta name="twitter:image" content="{{SITE_URL}}/images/og-image.webp" />
-  <meta name="msapplication-TileColor" content="#2196f3">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="IT company in Delhi, web development company Delhi NCR, custom software, mobile apps, eCommerce development">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IT Company in Delhi | Software &amp; Web Development | BlueByte">
+  <meta property="og:description" content="BlueByte IT Solutions is an IT company in Delhi building custom software, websites and mobile apps for businesses across Delhi NCR and India.">
+  <meta property="og:site_name" content="BlueByte IT Solutions">
+  <meta property="og:image" content="{{SITE_URL}}/images/og-image.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IT Company in Delhi | Software &amp; Web Development | BlueByte">
+  <meta name="twitter:description" content="BlueByte IT Solutions is an IT company in Delhi building custom software, websites and mobile apps for businesses across Delhi NCR and India.">
+  <meta name="twitter:image" content="{{SITE_URL}}/images/og-image.webp">
+  <meta name="msapplication-TileColor" content="#071315">
+  <meta name="theme-color" content="#071315">
   <meta http-equiv="x-dns-prefetch-control" content="on">
-  <link rel="preload" href="/css/home.min.css" as="style" fetchpriority="high">
-  <link rel="stylesheet" href="/css/home.min.css">
-  <link rel="preload" href="/css/splideslider.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="/css/splideslider.css">
-  </noscript>
-  <script src="js/analytics.js" defer></script>
-  <script src="js/index-critical.js" defer></script>
-
-    <meta name="google-analytics-id" content="{{GA_MEASUREMENT_ID}}">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <link rel="canonical" href="{{SITE_URL}}/">
   <meta property="og:url" content="{{SITE_URL}}/">
   <link rel="preload" href="/fonts/Sora-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/dm-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/css/home.min.css" as="style" fetchpriority="high">
+  <link rel="stylesheet" href="/css/home.min.css">
+  <link rel="stylesheet" href="/css/home.css">
   <link rel="preload" as="image" href="/images/og-image.webp" fetchpriority="high">
+  <script src="js/analytics.js" defer></script>
+  <script src="js/index-critical.js" defer></script>
+  <script src="js/home.js" defer></script>
+  <meta name="google-analytics-id" content="{{GA_MEASUREMENT_ID}}">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -93,6 +64,7 @@
       "image": "{{SITE_URL}}/images/og-image.webp",
       "telephone": "+91-8178838292",
       "email": "info@bluebyteitsolutions.com",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "MS 83, Mohan Garden",
@@ -100,16 +72,15 @@
         "addressRegion": "Delhi",
         "postalCode": "110059",
         "addressCountry": "IN"
-      }
+      },
+      "areaServed": ["Delhi", "Noida", "Gurugram", "India"]
     },
     {
       "@type": "WebSite",
       "@id": "{{SITE_URL}}/#website",
       "url": "{{SITE_URL}}/",
       "name": "BlueByte IT Solutions",
-      "publisher": {
-        "@id": "{{SITE_URL}}/#organization"
-      },
+      "publisher": { "@id": "{{SITE_URL}}/#organization" },
       "inLanguage": "en-IN"
     },
     {
@@ -117,34 +88,87 @@
       "@id": "{{SITE_URL}}/#webpage",
       "url": "{{SITE_URL}}/",
       "name": "IT Company in Delhi | Software & Web Development | BlueByte",
-      "description": "BlueByte IT Solutions builds custom software, websites and mobile apps for businesses in Delhi NCR and across India. Talk with our team about your next digital product.",
+      "description": "BlueByte IT Solutions is an IT company in Delhi building custom software, websites and mobile apps for businesses across Delhi NCR and India.",
       "inLanguage": "en-IN",
-      "isPartOf": {
-        "@id": "{{SITE_URL}}/#website"
-      },
+      "isPartOf": { "@id": "{{SITE_URL}}/#website" },
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "{{SITE_URL}}/images/og-image.webp"
       },
-      "about": {
-        "@id": "{{SITE_URL}}/#organization"
-      }
+      "about": { "@id": "{{SITE_URL}}/#organization" }
+    },
+    {
+      "@type": "ItemList",
+      "name": "BlueByte IT services",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Software Development", "url": "{{SITE_URL}}/software-development" },
+        { "@type": "ListItem", "position": 2, "name": "Web Development", "url": "{{SITE_URL}}/web-development" },
+        { "@type": "ListItem", "position": 3, "name": "eCommerce", "url": "{{SITE_URL}}/ecommerce" },
+        { "@type": "ListItem", "position": 4, "name": "Digital Marketing and SEO", "url": "{{SITE_URL}}/digital-marketing" },
+        { "@type": "ListItem", "position": 5, "name": "Product Engineering", "url": "{{SITE_URL}}/product-engineer" },
+        { "@type": "ListItem", "position": 6, "name": "Cloud and DevOps", "url": "{{SITE_URL}}/cloud-devops" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does BlueByte IT Solutions build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We design and develop custom software, websites, mobile apps, eCommerce platforms, cloud infrastructure and SEO-led digital marketing for businesses in Delhi NCR and across India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A marketing website often ships in four to eight weeks. Product and software work depends on scope; after discovery we give a dated plan with milestones rather than a vague range."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with startups as well as established companies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Early teams get a tight, launchable slice. Larger organisations get architecture, integrations and the care a live system deserves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you price software and web work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing is transparent and scoped. After a short brief we share a written proposal — what is included, what is not, and how change is handled — before any build starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you improve an existing website or product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We regularly take over legacy code, slow sites and unfinished apps. The first step is an audit of performance, SEO, security and UX, then a staged plan rather than a risky rewrite."
+          }
+        }
+      ]
     }
   ]
 }
 </script>
 </head>
-
 <body>
+  <a class="lux-skip" href="#main">Skip to content</a>
   <div id="webpage">
     <div class="arrow-round">
       <div class="arrow-round-wrap darkgreen">
-        <svg class="arrow-circle svg-content text-white" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <svg class="arrow-circle svg-content text-white" width="100%" height="100%" viewBox="-1 -1 102 102" aria-hidden="true">
           <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
         <div class="arrow-svg">
           <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-            stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1 text-gray-900">
+            stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1 text-gray-900" aria-hidden="true">
             <polyline points="18 15 12 9 6 15"></polyline>
           </svg>
         </div>
@@ -477,1010 +501,442 @@
         </div>
       </nav>
     </header>
-    <!-- banner wrap -->
-    <section id="breadcrumb">
-      <div class="banner-wrapper position-relative overflow-hidden agency-banner font-sora">
-        <div class="banner-wrapper-image position-absolute bottom-0" style="inset: 0;">
-          <div class="video-banner h-100 w-100">
-            <video id="heroVideo" playsinline muted loop preload="none" poster="images/og-image.webp"
-              class="h-100 w-100 object-fit-cover">
-              <source id="videoSource" src="images/bluebyte_1.webm" type="video/webm">
-              <source src="images/bluebyte_2.mp4" type="video/mp4">
-            </video>
+    <main id="main" class="lux-main">
+      <section class="lux-hero" aria-labelledby="home-hero-title">
+        <div class="lux-hero-media" aria-hidden="true">
+          <video id="heroVideo" playsinline muted loop preload="none" poster="images/og-image.webp">
+            <source id="videoSource" src="images/bluebyte_1.webm" type="video/webm">
+            <source src="images/bluebyte_2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="lux-hero-inner">
+          <p class="lux-kicker lux-rise">Delhi NCR · Software studio</p>
+          <h1 id="home-hero-title" data-split>IT company in Delhi crafting web, app and custom software.</h1>
+          <p class="lux-lead lux-rise lux-rise-2">BlueByte IT Solutions designs and builds digital products for startups, growing brands and enterprises — websites, mobile apps and software that feel considered, convert with intent, and scale without noise.</p>
+          <div class="lux-actions lux-rise lux-rise-3">
+            <a class="lux-btn lux-btn-gold" href="contact.html">Request a proposal</a>
+            <a class="lux-btn lux-btn-ghost" href="tel:+918178838292">Talk to our experts</a>
+          </div>
+          <div class="lux-scroll-hint lux-rise lux-rise-4">
+            <span class="lux-scroll-line" aria-hidden="true"></span>
+            Scroll
           </div>
         </div>
-        <div class="container h-100">
-          <div class="row h-100">
-            <div class="col-lg-9 font-sora align-content-end z-10">
-              <h1 class="text-white display5-size fw-600 lh-7">IT Company in Delhi   <span class="text-darkgreen">Providing</span> Web,
-                <span class="d-inline-block border-darkgreen border-3 border-bottom">App & Custom Software  <span class="text-darkgreen">Solutions</span></span>
-              </h1>
-              <p class="fw-400 text-gray-300 lh-28 pe-lg-5 my-4 py-lg-3">We help startups, small businesses, and enterprises grow with scalable digital solutions - from websites and mobile apps to SEO-ready custom software.</p>
-              <div class="d-flex flex-sm-row flex-column gap-sm-3 gap-2">
-                <a href="contact.html"
-                  class="btn bg-blue btn-lg rounded-2 px-4 text-white mb-1 d-flex gap-3 align-items-center justify-content-center btn-hover-bg-darken-primary border-0">
-                  <span>Get a Free Quote</span>
-                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
-                </a>
-                <a href="tel:+918178838292"
-                  class="btn bg-gray-100 btn-lg rounded-2 px-4 text-gray-900 mb-1 aos-init aos-animate">
-                  <svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"></path>
-                  </svg>Talk to Our Experts
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-6 text-center">
-             100% Client Satisfaction
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-             On-Time Delivery
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-             Transparent Pricing
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-             Dedicated Support
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="organization">
-      <div class="feature-wrap py-5 font-dm" style="background-image: url(images/banner-bg-5.webp);">
-        <div class="container">
-          <h2 class="display5-size text-gray-900 fw-600 mb-lg-2 mb-1 aos-init aos-animate" data-aos="fade-up"
-            data-aos-duration="400" data-aos-delay="200">Your Reliable Technology Partner in Delhi</h2>
-          <div class="row align-items-center">
-            <div class="col-lg-8 ps-lg-5" id="about-bluebyte">
-              <div class="ps-lg-4">
-                <p class="text-gray-900 fw-400 mt-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400"
-                  data-aos-delay="200">
-                  BlueByte IT Solutions is a full-service IT company in Delhi delivering high-quality web development, mobile apps, custom software, and digital marketing solutions.
-                </p>
-                <p class="text-gray-900 fw-400 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400"
-                  data-aos-delay="200">We don't just build products - we build <strong>business-focused digital solutions</strong> that help you attract customers, automate processes, and scale faster.
-                </p>
-                <p class="text-gray-900 fw-400 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400"
-                  data-aos-delay="200">Whether you are a startup or an established business, our team ensures your digital presence actually <strong>converts visitors into customers</strong>.</p>
-                <div class="row mt-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400"
-                  data-aos-delay="300">
-                  <div class="col-xl-6 col-lg-8 col-8">
-                    <a href="about.html" class="text-gray-900 fw-600 fs-16">Know More <svg
-                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-arrow-up-right ms-2">
-                        <line x1="7" y1="17" x2="17" y2="7"></line>
-                        <polyline points="7 7 17 7 17 17"></polyline>
-                      </svg></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-             <div class="col-lg-4 ps-lg-5">
-              <img src="images/about-1.webp" alt="website developer Delhi NCR"
-                class="img-fluid rounded-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400"
-                data-aos-delay="100" width="350" height="341" loading="eager" decoding="async"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Service wrap -->
-    <section id="localbusiness">
-      <div class="feature-wrap py-100 bg-darkcyan font-sora">
-        <div class="container">
-          <div class="row justify-content-center pb-65">
-            <div class="col-lg-8 text-center">
-              <h2 class="display5-size text-white fw-500 mb-lg-3 mb-2" data-aos="fade-up" data-aos-duration="400"
-                data-aos-delay="0">Our IT Services</h2>
-              <p class="text-gray-200 fs-16" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">Our
-                cross-functional expertise makes us a leading <strong>website development company in Delhi NCR</strong>
-                and a go-to partner for full-stack digital solutions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="maxw-1250 mx-auto">
-            <div class="row justify-content-center gy-4 gx-4">
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <a href="software-development.html"
-                  class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg viewBox="0 0 24 24" width="55" height="55" stroke="currentColor" stroke-width="1" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                      d="M9 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1M9 12H4m8 8V9h8v11h-8Zm0 0H9m8-4a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">Software Development</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">As a Custom-built software solutions designed to solve real business problems and improve efficiency</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
-                <a href="web-development.html" class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg viewBox="0 0 24 24" width="55" height="55" stroke="currentColor" stroke-width="1" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                      d="M12 18.5A2.493 2.493 0 0 1 7.51 20H7.5a2.468 2.468 0 0 1-2.4-3.154 2.98 2.98 0 0 1-.85-5.274 2.468 2.468 0 0 1 .92-3.182 2.477 2.477 0 0 1 1.876-3.344 2.5 2.5 0 0 1 3.41-1.856A2.5 2.5 0 0 1 12 5.5m0 13v-13m0 13a2.493 2.493 0 0 0 4.49 1.5h.01a2.468 2.468 0 0 0 2.403-3.154 2.98 2.98 0 0 0 .847-5.274 2.468 2.468 0 0 0-.921-3.182 2.477 2.477 0 0 0-1.875-3.344A2.5 2.5 0 0 0 14.5 3 2.5 2.5 0 0 0 12 5.5m-8 5a2.5 2.5 0 0 1 3.48-2.3m-.28 8.551a3 3 0 0 1-2.953-5.185M20 10.5a2.5 2.5 0 0 0-3.481-2.3m.28 8.551a3 3 0 0 0 2.954-5.185" />
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">Web Development</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">High-performance websites that are fast, secure, mobile-friendly, and conversion-focused</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
-                <a href="ecommerce.html" class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="55" height="55"
-                    stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                    viewBox="0 0 24 24" class="text-darkgreen">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                      d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">eCommerce</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">Shopify, WooCommerce, and custom eCommerce platforms that drive online sales</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <a href="digital-marketing.html"
-                  class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg viewBox="0 0 24 24" width="55" height="55" stroke="currentColor" stroke-width="1" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                      d="M18 9V4a1 1 0 0 0-1-1H8.914a1 1 0 0 0-.707.293L4.293 7.207A1 1 0 0 0 4 7.914V20a1 1 0 0 0 1 1h6M9 3v4a1 1 0 0 1-1 1H4m11 13a11.426 11.426 0 0 1-3.637-3.99A11.139 11.139 0 0 1 10 11.833L15 10l5 1.833a11.137 11.137 0 0 1-1.363 5.176A11.425 11.425 0 0 1 15.001 21Z" />
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">Digital Marketing & SEO</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">SEO, Google My Business optimization, and digital strategies that bring traffic and leads</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0">
-                <a href="product-engineer.html"
-                  class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg viewBox="0 0 24 24" width="55" height="55" stroke="currentColor" stroke-width="1" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
-                    <path
-                      d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
-                    </path>
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">Product Engineering</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">From idea to launch, delivered fast
-                      and on budget
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <a href="content-management-system.html"
-                  class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg viewBox="0 0 24 24" width="55" height="55" stroke="currentColor" stroke-width="1" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="1"
-                      d="M6 4v10m0 0a2 2 0 1 0 0 4m0-4a2 2 0 1 1 0 4m0 0v2m6-16v2m0 0a2 2 0 1 0 0 4m0-4a2 2 0 1 1 0 4m0 0v10m6-16v10m0 0a2 2 0 1 0 0 4m0-4a2 2 0 1 1 0 4m0 0v2" />
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">Content Management System</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">Update content, prices, and visuals
-                      in minutes</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <a href="data-science.html" class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg viewBox="0 0 24 24" width="55" height="55" stroke="currentColor" stroke-width="1" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
-                    <line x1="22" y1="12" x2="2" y2="12"></line>
-                    <path
-                      d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
-                    </path>
-                    <line x1="6" y1="16" x2="6.01" y2="16"></line>
-                    <line x1="10" y1="16" x2="10.01" y2="16"></line>
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">Data Science</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">Turn raw numbers into actionable
-                      insights</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <a href="cloud-devops.html" class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg viewBox="0 0 24 24" width="55" height="55" stroke="currentColor" stroke-width="1" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
-                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">Cloud & DevOps</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">Partner with the top cloud
-                        solutions company in Delhi</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0">
-                <a href="quality-engineering.html"
-                  class="d-flex flex-column rounded-4 p-4 cursor-pointer feature-div-hover"
-                  style="background: #005766;">
-                  <svg viewBox="0 0 24 24" width="55" height="55" stroke="currentColor" stroke-width="1" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
-                    <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
-                    <path
-                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                    </path>
-                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                  </svg>
-                  <div class="mt-5 font-sora pt-lg-4 pe-4 ps-2 mb-2">
-                    <h3 class="display3-size fw-500 text-white mb-2">Testing & QA</h3>
-                    <p class="fw-300 text-white opacity-75 fs-16 mb-0 lh-8 pt-lg-1">Ensure flawless user experiences
-                      with bug-free software</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Industry wrap -->
-    <section id="website">
-      <div class="banner-wrap bg-gradient-home-banner font-dm position-relative overflow-hidden">
-        <div class="service-wrap font-sora pt-5">
-          <div class="container">
-            <div class="row pb-65 gy-4">
-              <div class="col-lg-9">
-                <h2 class="display5-size text-gray-900 fw-600 font-sora mb-lg-3 mb-2" data-aos="fade-up"
-                  data-aos-duration="500" data-aos-delay="0">Industries We Transform</h2>
-                <p class="text-gray-900 fw-400 mb-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-                  Every business is unique. As a trusted <strong>software company in Delhi NCR</strong>, we deliver
-                  tailored digital solutions that fit your industry needs.</p>
-              </div>
-            </div>
-            <div class="row gy-4 pb-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
-              <div class="col-lg-6">
-                <div id="counter-carousel" class="splide slider-no-arrows">
-                  <div class="splide__track">
-                    <ul class="splide__list">
-                      <!-- slide 1 -->
-                      <li class="splide__slide me-3">
-                        <a href="fintech.html"
-                          class="overflow-hidden position-relative bg-gradient-black-bottom-g5 rounded-4">
-                          <img src="images/fintech-slide.webp" alt="software development company Delhi"
-                            class="object-fit-cover h-350 w-100" width="650" height="350" loading="lazy" decoding="async"/>
-                          <div class="position-absolute bottom-0 w-100 left-0 p-4 font-sora z-10">
-                            <div class="d-flex flex-row justify-content-between px-2">
-                              <div>
-                                <h3 class="display4-size fw-500 text-white mb-1">Banking & Payments</h3>
-                                <p class="fw-400 text-gray-200 mb-0 fs-15">Safe apps and tools for banks, wallets and
-                                  trading</p>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="splide__slide me-3">
-                        <a href="ecommerce.html"
-                          class="overflow-hidden position-relative bg-gradient-black-bottom-g5 rounded-4">
-                          <img src="images/retail-slide.webp" alt="top IT solutions  company in Delhi"
-                            class="object-fit-cover h-350 w-100" width="650" height="350" loading="lazy" decoding="async"/>
-                          <div class="position-absolute bottom-0 w-100 left-0 p-4 font-sora z-10">
-                            <div class="d-flex flex-row justify-content-between px-2">
-                              <div>
-                                <h3 class="display4-size fw-500 text-white mb-1">eCommerce & Retail</h3>
-                                <p class="fw-400 text-gray-200 mb-0 fs-15">Fast, pretty stores that sell more and crash
-                                  less</p>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="splide__slide me-3">
-                        <a href="health-pharma.html"
-                          class="overflow-hidden position-relative bg-gradient-black-bottom-g5 rounded-4">
-                          <img src="images/health-pharma-slide.webp" alt="website company in delhi"
-                            class="object-fit-cover h-350 w-100" width="650" height="350" loading="lazy" decoding="async"/>
-                          <div class="position-absolute bottom-0 w-100 left-0 p-4 font-sora z-10">
-                            <div class="d-flex flex-row justify-content-between px-2">
-                              <div>
-                                <h3 class="display4-size fw-500 text-white mb-1">Health & Medicine</h3>
-                                <p class="fw-400 text-gray-200 mb-0 fs-15">Secure apps for doctors, chemists and health
-                                  plans</p>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <a href="real-estate.html"
-                  class="d-flex flex-column p-3 justify-content-end rounded-4 h-345 font-sora section-img-bg"
-                  style="background:url('images/vip-villa.webp') no-repeat center center;">
-                  <h3 class="display1-size fw-600 text-white">Real Estate</h3>
-                  <p class="text-gray-200 fw-400 mb-0 fs-15">Custom real estate websites and apps to list, sell, and
-                    manage property seamlessly.</p>
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="manufacturing-logistics.html"
-                  class="d-flex flex-column p-3 justify-content-end rounded-4 h-345 font-sora section-img-bg"
-                  style="background:url('images/logistics-slide.webp') no-repeat center center;">
-                  <h3 class="display1-size fw-600 text-white">Manufacturing and Logistics</h3>
-                  <p class="text-gray-200 fw-400 mb-0 fs-15">Smart tools to track stock, trucks, and machines-all on a
-                    single screen</p>
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="automotive.html"
-                  class="d-flex flex-column p-3 justify-content-end rounded-4 h-345 font-sora section-img-bg"
-                  style="background:url('images/automotive-slide.webp') no-repeat center center;">
-                  <h3 class="display1-size fw-600 text-white">Automotive</h3>
-                  <p class="text-gray-200 fw-400 mb-0 fs-15">Intelligent software solutions for drivers, fleets, and
-                    repair shops</p>
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="agriculture.html"
-                  class="d-flex flex-column p-3 justify-content-end rounded-4 h-345 font-sora section-img-bg"
-                  style="background:url('images/agriculture-slide.webp') no-repeat center center;">
-                  <h3 class="display1-size fw-600 text-white">Agriculture, Farms & Food</h3>
-                  <p class="text-gray-200 fw-400 mb-0 fs-15">Data-driven insights to boost productivity and reduce waste
-                  </p>
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="media-entertainment.html"
-                  class="d-flex flex-column p-3 justify-content-end rounded-4 h-345 font-sora section-img-bg"
-                  style="background:url('images/media-slide.webp') no-repeat center center;">
-                  <h3 class="display1-size fw-600 text-white">Media & Entertainment</h3>
-                  <p class="text-gray-200 fw-400 mb-0 fs-15">Seamless streaming for videos, music, and gaming platforms
-                  </p>
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="education.html"
-                  class="d-flex flex-column p-3 justify-content-end rounded-4 h-345 font-sora section-img-bg"
-                  style="background:url('images/education-slide.webp') no-repeat center center;">
-                  <h3 class="display1-size fw-600 text-white">Education</h3>
-                  <p class="text-gray-200 fw-400 mb-0 fs-15">Smart and simple tools for online classes, homework, and
-                    student engagement</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- feature wrap -->
-    <section>
-      <div class="feature-wrap pb-100 pt-5 font-dm">
-        <div class="mx-auto maxw-1250">
-          <div class="container">
-            <div class="row justify-content-center pb-65">
-              <div class="col-lg-7 text-center">
-                <div class="d-flex flex-row justify-content-center">
-                  <div
-                    class="px-3 py-1 border border-gray-200 shadow-sm rounded-3 fs-13 fw-600 text-uppercase text-deepcyan bg-white align-items-center gap-2 d-flex w-auto"
-                    data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
-                      stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                      <path
-                        d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
-                      </path>
-                    </svg>
-                    <span class="lh-22">How We Do</span>
-                  </div>
-                </div>
-                <h3 class="display5-size text-gray-900 fw-600 text-center mb-lg-3 mb-2 mt-3" data-aos="fade-up"
-                  data-aos-duration="400" data-aos-delay="000">Four Easy Steps in our software engineering</h3>
-                <p class="text-gray-700 text-center w-lg-75 mx-auto" data-aos="fade-up" data-aos-duration="400"
-                  data-aos-delay="100">Software development is a multifaceted process that involves various features and
-                  efficient software solutions.</p>
-              </div>
-            </div>
-            <div class="row g-4">
-              <div class="col-xl-3 col-lg-6 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <div class="feature-div text-center progress-icon-direction top position-relative">
-                  <div
-                    class="bg-gradient-primary w-15 h-15 rounded-pill d-flex align-items-center justify-content-center display4-size fw-500 text-white mx-auto">
-                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none"
-                      stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 18.5A2.493 2.493 0 0 1 7.51 20H7.5a2.468 2.468 0 0 1-2.4-3.154 2.98 2.98 0 0 1-.85-5.274 2.468 2.468 0 0 1 .92-3.182 2.477 2.477 0 0 1 1.876-3.344 2.5 2.5 0 0 1 3.41-1.856A2.5 2.5 0 0 1 12 5.5m0 13v-13m0 13a2.493 2.493 0 0 0 4.49 1.5h.01a2.468 2.468 0 0 0 2.403-3.154 2.98 2.98 0 0 0 .847-5.274 2.468 2.468 0 0 0-.921-3.182 2.477 2.477 0 0 0-1.875-3.344A2.5 2.5 0 0 0 14.5 3 2.5 2.5 0 0 0 12 5.5m-8 5a2.5 2.5 0 0 1 3.48-2.3m-.28 8.551a3 3 0 0 1-2.953-5.185M20 10.5a2.5 2.5 0 0 0-3.481-2.3m.28 8.551a3 3 0 0 0 2.954-5.185" />
-                    </svg>
-                  </div>
-                  <h3 class="text-gray-900 fw-600 fs-18 mb-0 mt-2">Brainstroming</h3>
-                  <p class="text-gray-700 fw-500 fs-14">Collaborative idea generation to align technology with your
-                    goals</p>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-6 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <div class="feature-div text-center progress-icon-direction bottom position-relative">
-                  <div
-                    class="bg-gradient-primary w-15 h-15 rounded-pill d-flex align-items-center justify-content-center display4-size fw-500 text-white mx-auto">
-                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none"
-                      stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="m4.988 19.012 5.41-5.41m2.366-6.424 4.058 4.058-2.03 5.41L5.3 20 4 18.701l3.355-9.494 5.41-2.029Zm4.626 4.625L12.197 6.61 14.807 4 20 9.194l-2.61 2.61Z" />
-                    </svg>
-                  </div>
-                  <h3 class="text-gray-900 fw-600 fs-18 mb-0 mt-2">Product Development</h3>
-                  <p class="text-gray-700 fw-500 fs-14">A multi-faceted process focused on delivering scalable,
-                    high-performance solutions</p>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-6 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <div class="feature-div text-center progress-icon-direction top position-relative">
-                  <div
-                    class="bg-gradient-primary w-15 h-15 rounded-pill d-flex align-items-center justify-content-center display4-size fw-500 text-white mx-auto">
-                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="1" fill="none"
-                      stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                      <path
-                        d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z" />
-                    </svg>
-                  </div>
-                  <h3 class="text-gray-900 fw-600 fs-18 mb-0 mt-2">Front-End Development</h3>
-                  <p class="text-gray-700 fw-500 fs-14">Crafting visually appealing, user-friendly, and responsive
-                    interfaces</p>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-6 col-md-6" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <div class="feature-div text-center">
-                  <div
-                    class="bg-gradient-primary w-15 h-15 rounded-pill d-flex align-items-center justify-content-center display4-size fw-500 text-white mx-auto">
-                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="1" fill="none"
-                      stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                      <path
-                        d="M21.718 12c0-1.429-1.339-2.681-3.467-3.5.029-.18.077-.37.1-.545.217-2.058-.273-3.543-1.379-4.182-1.235-.714-2.983-.186-4.751 1.239C10.45 3.589 8.7 3.061 7.468 3.773c-1.107.639-1.6 2.124-1.379 4.182.018.175.067.365.095.545-2.127.819-3.466 2.071-3.466 3.5 0 1.429 1.339 2.681 3.466 3.5-.028.18-.077.37-.095.545-.218 2.058.272 3.543 1.379 4.182.376.213.803.322 1.235.316a5.987 5.987 0 0 0 3.514-1.56 5.992 5.992 0 0 0 3.515 1.56 2.44 2.44 0 0 0 1.236-.316c1.106-.639 1.6-2.124 1.379-4.182-.019-.175-.067-.365-.1-.545 2.132-.819 3.471-2.071 3.471-3.5Zm-6.01-7.548a1.5 1.5 0 0 1 .76.187c.733.424 1.055 1.593.884 3.212-.012.106-.043.222-.058.33-.841-.243-1.7-.418-2.57-.523a16.165 16.165 0 0 0-1.747-1.972 4.9 4.9 0 0 1 2.731-1.234Zm-7.917 8.781c.172.34.335.68.529 1.017.194.337.395.656.6.969a14.09 14.09 0 0 1-1.607-.376 14.38 14.38 0 0 1 .478-1.61Zm-.479-4.076a14.085 14.085 0 0 1 1.607-.376c-.205.313-.405.634-.6.969-.195.335-.357.677-.529 1.017-.19-.527-.35-1.064-.478-1.61ZM8.3 12a19.32 19.32 0 0 1 .888-1.75c.33-.568.69-1.118 1.076-1.65.619-.061 1.27-.1 1.954-.1.684 0 1.333.035 1.952.1a19.63 19.63 0 0 1 1.079 1.654c.325.567.621 1.15.887 1.746a18.869 18.869 0 0 1-1.953 3.403 19.218 19.218 0 0 1-3.931 0 20.169 20.169 0 0 1-1.066-1.653A19.324 19.324 0 0 1 8.3 12Zm7.816 2.25c.2-.337.358-.677.53-1.017.191.527.35 1.065.478 1.611a14.48 14.48 0 0 1-1.607.376c.202-.314.404-.635.597-.97h.002Zm.53-3.483c-.172-.34-.335-.68-.53-1.017a20.214 20.214 0 0 0-.6-.97c.542.095 1.078.22 1.606.376a14.111 14.111 0 0 1-.478 1.611h.002ZM12.217 6.34c.4.375.777.773 1.13 1.193-.37-.02-.746-.033-1.129-.033s-.76.013-1.131.033c.353-.42.73-.817 1.13-1.193Zm-4.249-1.7a1.5 1.5 0 0 1 .76-.187 4.9 4.9 0 0 1 2.729 1.233A16.253 16.253 0 0 0 9.71 7.658c-.87.105-1.728.28-2.569.524-.015-.109-.047-.225-.058-.331-.171-1.619.151-2.787.885-3.211ZM3.718 12c0-.9.974-1.83 2.645-2.506.218.857.504 1.695.856 2.506-.352.811-.638 1.65-.856 2.506C4.692 13.83 3.718 12.9 3.718 12Zm4.25 7.361c-.734-.423-1.056-1.593-.885-3.212.011-.106.043-.222.058-.331.84.243 1.697.418 2.564.524a16.37 16.37 0 0 0 1.757 1.982c-1.421 1.109-2.714 1.488-3.494 1.037Zm3.11-2.895c.374.021.753.034 1.14.034.387 0 .765-.013 1.139-.034a14.4 14.4 0 0 1-1.14 1.215 14.248 14.248 0 0 1-1.139-1.215Zm5.39 2.895c-.782.451-2.075.072-3.5-1.038a16.248 16.248 0 0 0 1.757-1.981 16.41 16.41 0 0 0 2.565-.523c.015.108.046.224.058.33.175 1.619-.148 2.789-.88 3.212Zm1.6-4.854A16.563 16.563 0 0 0 17.216 12c.352-.812.638-1.65.856-2.507 1.671.677 2.646 1.607 2.646 2.507 0 .9-.975 1.83-2.646 2.507h-.004Z" />
-                      <path d="M12.215 13.773a1.792 1.792 0 1 0-1.786-1.8v.006a1.787 1.787 0 0 0 1.786 1.794Z" />
-                    </svg>
-                  </div>
-                  <h3 class="text-gray-900 fw-600 fs-18 mb-0 mt-2">Back-End Development</h3>
-                  <p class="text-gray-700 fw-500 fs-14">Building the engine that ensures seamless functionality,
-                    scalability, and security</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Technology wrap -->
-    <section>
-      <div class="banner-wrap bg-gradient-home-banner font-dm position-relative overflow-hidden">
-        <img src="images/svg/svg-diagram-1.png" alt="diagram" class="position-absolute start-5 d-none d-lg-flex"
-          loading="lazy" width="364" height="413" decoding="async">
-        <img src="images/svg/svg-diagram-1.png" alt="diagram"
-          class="position-absolute end-5 bottom-5 rotate-180 d-none d-lg-flex" loading="lazy" width="364" height="413" decoding="async">
-        <div class="container maxw-1200 pt-5 z-10 position-relative">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 text-center pb-4 mb-lg-4">
-              <h3 class="display5-size text-gray-900 fw-600 mb-lg-3 mb-2" data-aos="fade-up" data-aos-duration="400"
-                data-aos-delay="100">Technology Stack</h3>
-              <p class="text-gray-900 fw-400 px-lg-5 mb-0" data-aos="fade-up" data-aos-duration="400"
-                data-aos-delay="200">Find the solutions you need for your software development</p>
-            </div>
-          </div>
-          <!-- Sliding Logo Rows -->
-          <div class="logo-slider-wrapper overflow-hidden pb-5">
-            <!-- Row 1: Right to Left -->
-            <div class="logo-row slider-right-to-left">
-              <!-- Duplicate logos for seamless loop -->
-              <div class="logo-slide">
-                <img src="images/tech/angular.webp" alt="Angular" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/react.webp" alt="React" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/next-js.webp" alt="Next.js" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/vue.webp" alt="Vue" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/html5.webp" alt="HTML5" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/css3.webp" alt="CSS3" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/bootstrap.webp" alt="Bootstrap" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/js5.webp" alt="JavaScript" width="124" height="28" loading="lazy" decoding="async"/>
-              </div>
-              <div class="logo-slide">
-                <img src="images/tech/angular.webp" alt="Angular" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/react.webp" alt="React" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/next-js.webp" alt="Next.js" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/vue.webp" alt="Vue" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/html5.webp" alt="HTML5" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/css3.webp" alt="CSS3" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/bootstrap.webp" alt="Bootstrap" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/js5.webp" alt="JavaScript" width="124" height="28" loading="lazy" decoding="async"/>
-              </div>
-            </div>
-            <!-- Row 2: Left to Right -->
-            <div class="logo-row slider-left-to-right mt-4">
-              <div class="logo-slide">
-                <img src="images/tech/laravel.webp" alt="Laravel" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/react-native.webp" alt="React Native" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/typescript.webp" alt="TypeScript" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/node.webp" alt="Node.js" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/php.webp" alt="PHP" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/play.webp" alt="Play" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/post.webp" alt="Post" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/dotnet.webp" alt=".NET" width="124" height="28" loading="lazy" decoding="async"/>
-              </div>
-              <div class="logo-slide">
-                <img src="images/tech/laravel.webp" alt="Laravel" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/react-native.webp" alt="React Native" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/typescript.webp" alt="TypeScript" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/node.webp" alt="Node.js" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/php.webp" alt="PHP" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/play.webp" alt="Play" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/post.webp" alt="Post" width="124" height="28" loading="lazy" decoding="async"/>
-                <img src="images/tech/dotnet.webp" alt=".NET" width="124" height="28" loading="lazy" decoding="async"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- feedback wrap -->
-    <section>
-      <div class="feedback-wrap py-100 bg-gray-900 overflow-hidden font-sora">
-        <div class="maxw-1250 mx-auto">
-          <div class="container pb-4">
-            <div class="row justify-content-center pb-65">
-              <div class="col-lg-7 text-center">
-                <h3 class="display5-size text-white fw-500 mb-lg-3 mb-2" data-aos="fade-up" data-aos-duration="400"
-                  data-aos-delay="0">People Like Working With Us</h3>
-                <p class="text-gray-500 fs-14 fw-400" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
-                  Their professionalism and commitment to our success were evident throughout the entire process.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <!-- Splide Carousel -->
-                <div id="feedback-carousel"
-                  class="splide slider-dots-line splide-pagination-bottom slider-arrows-outside">
-                  <div class="splide__track">
-                    <div class="splide__list">
-                      <div class="splide__slide">
-                        <div class="feedback font-sora rounded-4 bg-gray-800 p-4">
-                          <div class="p-2 d-flex flex-column">
-                            <div class="d-flex flex-row gap-1 mb-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-gray-500" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <span class="text-white fs-16 fw-400 ms-1 d-inline-block lh-22 pb-1">4.5</span>
-                            </div>
-                            <p class="text-gray-100 display1-size fw-300 pe-2 mb-5">Working with this team has been an
-                              absolute pleasure. They understood our requirements perfectly and delivered a solution
-                              that
-                              exceeded expectations. Their professionalism, clear communication, and technical expertise
-                              truly set them apart.</p>
-                          </div>
-                          <div class="d-flex flex-row gap-3 mt-2 p-2">
-                            <img src="images/avatars/profile-pic.jpg" alt="Amit Sharma" class="w-11 h-11 rounded-circle"
-                              loading="lazy" width="100" height="100" decoding="async">
-                            <div class="d-flex flex-column">
-                              <span class="fs-15 text-gray-100 fw-500 lh-22 d-inline-block">Amit Sharma</span>
-                            </div>
-                            <div class="ms-auto">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-quote text-gray-600" viewBox="0 0 16 16">
-                                <path
-                                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="splide__slide">
-                        <div class="feedback font-sora rounded-4 bg-gray-800 p-4">
-                          <div class="p-2 d-flex flex-column">
-                            <div class="d-flex flex-row gap-1 mb-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <span class="text-white fs-16 fw-400 ms-1 d-inline-block lh-22 pb-1">5</span>
-                            </div>
-                            <p class="text-gray-100 display1-size fw-300 pe-2 mb-5">We needed a scalable platform to
-                              manage our growing operations. Not only did they design and develop an excellent system,
-                              but
-                              they also guided us at every step with valuable insights. Their ability to blend
-                              innovation
-                              with practical solutions is commendable.</p>
-                          </div>
-                          <div class="d-flex flex-row gap-3 mt-2 p-2">
-                            <img src="images/avatars/profile-pic.jpg" alt="Priya Verma" class="w-11 h-11 rounded-circle"
-                              loading="lazy" width="100" height="100" decoding="async">
-                            <div class="d-flex flex-column">
-                              <span class="fs-15 text-gray-100 fw-500 lh-22 d-inline-block">Priya Verma</span>
-                            </div>
-                            <div class="ms-auto">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-quote text-gray-600" viewBox="0 0 16 16">
-                                <path
-                                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="splide__slide">
-                        <div class="feedback font-sora rounded-4 bg-gray-800 p-4">
-                          <div class="p-2 d-flex flex-column">
-                            <div class="d-flex flex-row gap-1 mb-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <span class="text-white fs-16 fw-400 ms-1 d-inline-block lh-22 pb-1">5</span>
-                            </div>
-                            <p class="text-gray-100 display1-size fw-300 pe-2 mb-5">From concept to launch, they
-                              provided
-                              us with top-notch service. The level of detail, timely delivery, and ongoing support has
-                              been outstanding. Our application now runs more efficiently, and our users are happier
-                              than
-                              ever.</p>
-                          </div>
-                          <div class="d-flex flex-row gap-3 mt-2 p-2">
-                            <img src="images/avatars/profile-pic.jpg" alt="Rohit Khanna"
-                              class="w-11 h-11 rounded-circle" loading="lazy" width="100" height="100" decoding="async">
-                            <div class="d-flex flex-column">
-                              <span class="fs-15 text-gray-100 fw-500 lh-22 d-inline-block">Rohit Khanna</span>
-                            </div>
-                            <div class="ms-auto">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-quote text-gray-600" viewBox="0 0 16 16">
-                                <path
-                                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="splide__slide">
-                        <div class="feedback font-sora rounded-4 bg-gray-800 p-4">
-                          <div class="p-2 d-flex flex-column">
-                            <div class="d-flex flex-row gap-1 mb-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-gray-500" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <span class="text-white fs-16 fw-400 ms-1 d-inline-block lh-22 pb-1">4.5</span>
-                            </div>
-                            <p class="text-gray-100 display1-size fw-300 pe-2 mb-5">Their expertise in cloud and DevOps
-                              helped us streamline our infrastructure, saving both time and costs. What impressed me
-                              most
-                              was their proactive support and quick response whenever we needed assistance. A
-                              trustworthy
-                              partner indeed.</p>
-                          </div>
-                          <div class="d-flex flex-row gap-3 mt-2 p-2">
-                            <img src="images/avatars/profile-pic.jpg" alt="Neha Gupta" class="w-11 h-11 rounded-circle"
-                              loading="lazy" width="100" height="100" decoding="async">
-                            <div class="d-flex flex-column">
-                              <span class="fs-15 text-gray-100 fw-500 lh-22 d-inline-block">Neha Gupta</span>
-                            </div>
-                            <div class="ms-auto">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-quote text-gray-600" viewBox="0 0 16 16">
-                                <path
-                                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="splide__slide">
-                        <div class="feedback font-sora rounded-4 bg-gray-800 p-4">
-                          <div class="p-2 d-flex flex-column">
-                            <div class="d-flex flex-row gap-1 mb-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                              </svg>
-                              <span class="text-white fs-16 fw-400 ms-1 d-inline-block lh-22 pb-1">5</span>
-                            </div>
-                            <p class="text-gray-100 display1-size fw-300 pe-2 mb-5">The team not only delivered what we
-                              asked for but also suggested features that significantly improved user engagement. Their
-                              creativity and forward-thinking approach helped us stand out in a competitive market.</p>
-                          </div>
-                          <div class="d-flex flex-row gap-3 mt-2 p-2">
-                            <img src="images/avatars/profile-pic.jpg" alt="Vikram Patel"
-                              class="w-11 h-11 rounded-circle" loading="lazy" width="100" height="100" decoding="async">
-                            <div class="d-flex flex-column">
-                              <span class="fs-15 text-gray-100 fw-500 lh-22 d-inline-block">Vikram Patel</span>
-                            </div>
-                            <div class="ms-auto">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-quote text-gray-600" viewBox="0 0 16 16">
-                                <path
-                                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- blog wrap -->
-    <section>
-      <div class="blog-wrap py-100 bg-white font-dm overflow-hidden">
-        <div class="container">
-          <div class="row pb-65 justify-content-between gy-3 gy-lg-0">
-            <div class="col-lg-5 text-start">
-              <h3 class="display5-size text-gray-900 fw-600 mb-lg-2 mb-1" data-aos="fade-up" data-aos-duration="400"
-                data-aos-delay="200">Recent blog & articles</h3>
-              <p class="text-gray-700 fw-400 pe-lg-5 mb-0" data-aos="fade-up" data-aos-duration="400"
-                data-aos-delay="400"> Genuine feedback from those who know us best.</p>
-            </div>
-            <div class="col-lg-6 d-flex">
-              <div class="mt-auto ms-lg-auto">
-                <a href="blogs.html" data-aos="fade-left" data-aos-duration="400" data-aos-delay="400"
-                  class="btn bg-blue btn-lg rounded-2 px-4 text-white mb-1 d-flex gap-3 align-items-center justify-content-center btn-hover-bg-darken-primary border-0">
-                  <span>Check out for more blogs</span>
-                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="row gy-3">
-            <div class="col-lg-5" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
-              <a href="5-must-have-integrations-for-ecommerce-success.html"
-                class="border border-gray-200 rounded-4 overflow-hidden d-flex flex-column shadow-hover-lg">
-                <div class="post-image overflow-hidden">
-                  <img loading="lazy" src="images/blog-4.webp" alt="5 Must-Have Integrations for eCommerce Success"
-                    class="w-100 img-fluid scale-img" width="300" height="300" decoding="async"/>
-                </div>
-                <div class="post-content p-3">
-                  <div class="d-flex flex-column px-1">
-                    <div class="article-tag d-flex flex-row text-gray-600 fs-14 mb-2 fw-500">
-                      <span>26 August 2025</span>
-                    </div>
-                    <h3 class="display4-size text-gray-900 fw-600 mb-1">5 Must-Have Integrations for eCommerce Success
-                    </h3>
-                    <p class="text-gray-900 fw-400 text-gray-700 mt-1 pe-lg-5">In the rapidly evolving world of
-                      eCommerce,
-                      success hinges not just on the products you sell, but also on the systems and tools you employ to
-                      manage your online business.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-7 gap-4 d-flex flex-column">
-              <div class="article" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
-                <a href="what-is-web-development-complete-beginner-guide-2026.html"
-                  class="border border-gray-200 rounded-4 overflow-hidden d-flex flex-column shadow-hover-lg">
-                  <div class="row">
-                    <div class="col-lg-4 pe-0">
-                      <div class="post-image overflow-hidden h-100">
-                        <img loading="lazy" src="images/blog-web-development-guide-2026.png"
-                          alt="What is Web Development? Complete Beginner Guide (2026)"
-                          class="object-fit-cover h-100 w-100 scale-img" width="300" height="300" decoding="async"/>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 ps-0">
-                      <div class="post-content p-3">
-                        <div class="d-flex flex-column px-1">
-                          <div class="article-tag d-flex flex-row text-gray-600 fs-14 mb-2 fw-500">
-                            <span>26 August 2025</span>
-                          </div>
-                          <h2 class="display3-size text-gray-900 fw-600 mb-1 pe-lg-4">What is Web Development? Complete Beginner Guide (2026)</h2>
-                          <p class="text-gray-900 fw-400 text-gray-700 mt-1 pe-lg-5 mb-2">Learn what web development is, how websites and web apps are built, key technologies to start with, and the step-by-step roadmap beginners can follow in 2026.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="article mt-4" data-aos="fade-up" data-aos-duration="400" data-aos-delay="300">
-                <a href="top-frontend-technologies-to-use-in-2026.html"
-                  class="border border-gray-200 rounded-4 overflow-hidden d-flex flex-column shadow-hover-lg">
-                  <div class="row">
-                    <div class="col-lg-4 pe-0">
-                      <div class="post-image overflow-hidden h-100">
-                        <img loading="lazy" src="images/blog-frontend-techs.webp"
-                          alt="Top Frontend Technologies to Use in 2026" class="object-fit-cover h-100 w-100 scale-img"
-                          width="300" height="300" decoding="async"/>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 ps-0">
-                      <div class="post-content p-3">
-                        <div class="d-flex flex-column px-1">
-                          <div class="article-tag d-flex flex-row text-gray-600 fs-14 mb-2 fw-500">
-                            <span>07 September 2025</span>
-                          </div>
-                          <h3 class="display3-size text-gray-900 fw-600 mb-1 pe-lg-4">Top Frontend Technologies to Use
-                            in 2025</h3>
-                          <p class="text-gray-900 fw-400 text-gray-700 mt-1 pe-lg-5 mb-2">Discover the best frontend
-                            technologies to Use in 2026. Expert advice on frameworks, libraries, and tools shaping the
-                            future of web development for speed, UX, and SEO.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- CTA wrap -->
-    <section>
-      <div class="subscribe-wrap font-sora">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 position-relative">
-              <div
-                class="subscribe-div z-5 position-relative w-100 py-sm-5 px-sm-4 p-4 d-flex flex-column justify-content-center rounded-5"
-                style="background-image: url(images/cta-bg-2.webp); background-position: center center;">
-                <div class="row justify-content-center py-lg-4 p-3">
-                  <div class="col-xl-7 col-lg-10 text-center">
-                    <h3 class="display5-size text-white fw-600 mb-lg-2 mb-3" data-aos="fade-up" data-aos-duration="200">
-                      Ready To Have A Chat?</h3>
-                    <p class="text-gray-100 fw-400 mt-3 px-lg-5" data-aos="fade-up" data-aos-duration="300"></p>
-                  </div>
-                  <div class="col-lg-12"></div>
-                  <div class="col-lg-4">
-                    <div class="d-flex justify-content-center flex-md-row flex-column gap-3 mt-2 mb-3">
-                      <button class="btn btn-lg bg-blue text-gray-900 btn-hover-bg-darken-primary border-0 text-white"
-                        onclick="location.href='contact.html';">
-                        <span>Let's Connect</span>
-                        <svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z" />
-                        </svg>
-                      </button>
-                      <span class="text-white fs-18" style="align-content:center"> | </span>
-                      <a href="https://wa.me/918178838292" class="btn btn-lg bg-blue text-gray-900 btn-hover-bg-darken-primary border-0" target="_blank" aria-label="Chat on WhatsApp" rel="noopener noreferrer"><span class="text-white">WhatsApp us</span></a>
+      </section>
 
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="lux-ticker" aria-hidden="true">
+        <div class="lux-ticker-track">
+          <span>Product engineering · Web development · Custom software · eCommerce · Cloud &amp; DevOps · Data science · Quality engineering · Digital marketing ·</span>
+          <span>Product engineering · Web development · Custom software · eCommerce · Cloud &amp; DevOps · Data science · Quality engineering · Digital marketing ·</span>
+        </div>
+      </div>
+
+      <section class="lux-trust" aria-label="Delivery promises">
+        <div class="lux-trust-grid lux-wrap-wide">
+          <div class="lux-trust-item">
+            <strong>100%</strong>
+            <span>Client satisfaction focus</span>
+          </div>
+          <div class="lux-trust-item">
+            <strong>On time</strong>
+            <span>Clear milestones, kept</span>
+          </div>
+          <div class="lux-trust-item">
+            <strong>Open</strong>
+            <span>Transparent pricing</span>
+          </div>
+          <div class="lux-trust-item">
+            <strong>Dedicated</strong>
+            <span>A team that stays with you</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="organization" class="lux-section lux-theme-light lux-about" aria-labelledby="about-title" data-reveal>
+        <div class="lux-wrap lux-about-grid">
+          <figure class="lux-frame">
+            <img src="images/about-1.webp" alt="BlueByte team collaborating on product design in Delhi" width="560" height="700" decoding="async">
+          </figure>
+          <div>
+            <p class="lux-kicker">The studio</p>
+            <h2 id="about-title" class="lux-title" data-split>Your reliable technology partner in Delhi.</h2>
+            <p class="lux-lead">BlueByte is a full-service IT company in Delhi delivering web development, mobile apps, custom software and digital marketing. We do not ship decoration. We build business-focused products that attract customers, automate work and scale with you.</p>
+            <p class="lux-lead">Whether you are launching a first product or modernising a live platform, the work is measured by one thing: visitors becoming customers, and systems staying calm under growth.</p>
+            <div class="lux-stats-inline">
+              <div><b>End-to-end</b><span>Strategy to launch</span></div>
+              <div><b>India-wide</b><span>Delhi NCR studio</span></div>
+              <div><b>Senior</b><span>Hands-on engineering</span></div>
+            </div>
+            <div class="lux-actions">
+              <a class="lux-btn lux-btn-ink" href="about.html">Know the studio</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="lux-section lux-manifesto lux-theme-dark" aria-labelledby="manifesto-title" data-reveal>
+        <div class="lux-wrap">
+          <p class="lux-kicker" id="manifesto-title">Manifesto</p>
+          <blockquote data-split>We design software that feels inevitable — precise, quiet and built to last.</blockquote>
+          <cite>BlueByte · Craft over clutter</cite>
+        </div>
+      </section>
+
+      <section id="localbusiness" class="lux-section lux-theme-dark lux-services" aria-labelledby="services-title" data-reveal>
+        <div class="lux-wrap">
+          <div class="lux-services-head">
+            <div>
+              <p class="lux-kicker">Capabilities</p>
+              <h2 id="services-title" class="lux-title" data-split>IT services, composed with intent.</h2>
+            </div>
+            <p class="lux-lead">Cross-functional teams make BlueByte a website development company in Delhi NCR and a long-term partner for full-stack digital work — from first sketch to production care.</p>
+          </div>
+          <div class="lux-service-grid">
+            <a class="lux-service" href="software-development.html">
+              <span class="lux-service-num">01</span>
+              <h3>Software development</h3>
+              <p>Custom-built software designed to solve real operational problems and raise efficiency without extra ceremony.</p>
+              <span class="lux-service-more">Explore</span>
+            </a>
+            <a class="lux-service" href="web-development.html">
+              <span class="lux-service-num">02</span>
+              <h3>Web development</h3>
+              <p>High-performance websites that are fast, secure, mobile-ready and shaped around conversion — not templates.</p>
+              <span class="lux-service-more">Explore</span>
+            </a>
+            <a class="lux-service" href="ecommerce.html">
+              <span class="lux-service-num">03</span>
+              <h3>eCommerce</h3>
+              <p>Shopify, WooCommerce and custom storefronts engineered to sell more, recover carts and stay stable on sale days.</p>
+              <span class="lux-service-more">Explore</span>
+            </a>
+            <a class="lux-service" href="digital-marketing.html">
+              <span class="lux-service-num">04</span>
+              <h3>Digital marketing &amp; SEO</h3>
+              <p>Search, Google Business and content systems that bring qualified traffic instead of empty volume.</p>
+              <span class="lux-service-more">Explore</span>
+            </a>
+            <a class="lux-service" href="product-engineer.html">
+              <span class="lux-service-num">05</span>
+              <h3>Product engineering</h3>
+              <p>From idea to launch: discovery, architecture, build and iteration, delivered on a budget you can defend.</p>
+              <span class="lux-service-more">Explore</span>
+            </a>
+            <a class="lux-service" href="cloud-devops.html">
+              <span class="lux-service-num">06</span>
+              <h3>Cloud &amp; DevOps</h3>
+              <p>Quiet infrastructure: automation, environments and releases you can trust, with a Delhi cloud team on call.</p>
+              <span class="lux-service-more">Explore</span>
+            </a>
+          </div>
+          <div class="lux-service-row">
+            <a class="lux-chip" href="content-management-system.html">Content management <span aria-hidden="true">→</span></a>
+            <a class="lux-chip" href="data-science.html">Data science <span aria-hidden="true">→</span></a>
+            <a class="lux-chip" href="quality-engineering.html">Testing &amp; QA <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="lux-section lux-theme-light lux-why" aria-labelledby="why-title" data-reveal>
+        <div class="lux-wrap">
+          <p class="lux-kicker">Why BlueByte</p>
+          <h2 id="why-title" class="lux-title" data-split>A calmer way to ship serious software.</h2>
+          <p class="lux-lead">Luxury, for us, is restraint: fewer meetings, clearer artefacts, senior people on the work, and a product that still looks considered a year after launch.</p>
+          <div class="lux-why-grid">
+            <article class="lux-why-card">
+              <span class="lux-index">01 — Listen</span>
+              <h3>Discovery before decoration</h3>
+              <p>We map users, revenue and constraints first. Design and code follow the brief, not the other way around.</p>
+            </article>
+            <article class="lux-why-card">
+              <span class="lux-index">02 — Craft</span>
+              <h3>Engineering you can audit</h3>
+              <p>Readable code, tested paths and documentation that a new teammate can enter without a guided tour.</p>
+            </article>
+            <article class="lux-why-card">
+              <span class="lux-index">03 — Steward</span>
+              <h3>Launch is not the ending</h3>
+              <p>Performance, SEO, analytics and care plans stay in the room so the product keeps earning after go-live.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lux-section lux-theme-dark" aria-labelledby="work-title" data-reveal>
+        <div class="lux-wrap">
+          <div class="lux-split lux-split-intro">
+            <div>
+              <p class="lux-kicker">Selected work</p>
+              <h2 id="work-title" class="lux-title" data-split>Quiet confidence, on the live web.</h2>
+            </div>
+            <p class="lux-lead">A few recent commissions — property, commerce, audit and mobility — each built to look expensive and behave simply.</p>
+          </div>
+          <div class="lux-work-grid">
+            <a class="lux-work-card" href="https://www.eshalhomebuilders.com/" rel="noopener noreferrer" target="_blank">
+              <img src="images/eshalHome.jpg" alt="Eshal Home Builders website" width="900" height="700" loading="lazy" decoding="async">
+              <div class="lux-work-copy">
+                <span>Real estate</span>
+                <h3>Eshal Home Builders</h3>
+              </div>
+            </a>
+            <a class="lux-work-card" href="https://www.femora.in/" rel="noopener noreferrer" target="_blank">
+              <img src="images/femora.jpg" alt="Femora kitchenware eCommerce website" width="700" height="480" loading="lazy" decoding="async">
+              <div class="lux-work-copy">
+                <span>eCommerce</span>
+                <h3>Femora</h3>
+              </div>
+            </a>
+            <a class="lux-work-card" href="https://auditvantagesolutions.com/" rel="noopener noreferrer" target="_blank">
+              <img src="images/auditVantageSolutions.jpg" alt="Audit Vantage Solutions product site" width="700" height="480" loading="lazy" decoding="async">
+              <div class="lux-work-copy">
+                <span>Professional services</span>
+                <h3>Audit Vantage</h3>
+              </div>
+            </a>
+          </div>
+          <div class="lux-actions">
+            <a class="lux-btn lux-btn-ghost" href="portfolio.html">View the portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="website" class="lux-section lux-theme-light" aria-labelledby="industries-title" data-reveal>
+        <div class="lux-wrap">
+          <p class="lux-kicker">Sectors</p>
+          <h2 id="industries-title" class="lux-title" data-split>Industries we transform.</h2>
+          <p class="lux-lead">Every business is particular. As a software company in Delhi NCR we tailor platforms to the grain of your industry, not a generic stack.</p>
+          <div class="lux-bento">
+            <a href="fintech.html" style="background-image: url('images/fintech-slide.webp');">
+              <h3>Banking &amp; payments</h3>
+              <p>Secure apps and tools for banks, wallets and trading desks.</p>
+            </a>
+            <a href="retail-e-commerce.html" style="background-image: url('images/retail-slide.webp');">
+              <h3>eCommerce &amp; retail</h3>
+              <p>Fast storefronts that sell more and hold under load.</p>
+            </a>
+            <a href="health-pharma.html" style="background-image: url('images/health-pharma-slide.webp');">
+              <h3>Health &amp; medicine</h3>
+              <p>Careful software for clinics, pharmacies and health plans.</p>
+            </a>
+            <a href="real-estate.html" style="background-image: url('images/vip-villa.webp');">
+              <h3>Real estate</h3>
+              <p>Listing, selling and managing property without friction.</p>
+            </a>
+            <a href="manufacturing-logistics.html" style="background-image: url('images/logistics-slide.webp');">
+              <h3>Manufacturing &amp; logistics</h3>
+              <p>Stock, fleets and machines on a single, calm screen.</p>
+            </a>
+            <a href="automotive.html" style="background-image: url('images/automotive-slide.webp');">
+              <h3>Automotive</h3>
+              <p>Software for drivers, fleets and workshops.</p>
+            </a>
+            <a href="agriculture.html" style="background-image: url('images/agriculture-slide.webp');">
+              <h3>Agriculture &amp; food</h3>
+              <p>Data that raises yield and cuts waste.</p>
+            </a>
+            <a href="education.html" style="background-image: url('images/education-slide.webp');">
+              <h3>Education</h3>
+              <p>Simple tools for classes, homework and engagement.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="lux-section lux-theme-light lux-tight" aria-labelledby="process-title" data-reveal>>
+        <div class="lux-wrap">
+          <p class="lux-kicker">Method</p>
+          <h2 id="process-title" class="lux-title" data-split>Four measured steps.</h2>
+          <p class="lux-lead">Software is a sequence. We keep it short, visible and easy to steer.</p>
+          <div class="lux-steps">
+            <article class="lux-step">
+              <h3>Brainstorming</h3>
+              <p>Collaborative idea work that aligns technology with commercial goals before a line of code is written.</p>
+            </article>
+            <article class="lux-step">
+              <h3>Product development</h3>
+              <p>Architecture and delivery focused on scalable, high-performance software — not throwaway prototypes.</p>
+            </article>
+            <article class="lux-step">
+              <h3>Front-end development</h3>
+              <p>Interfaces that feel inevitable: responsive, accessible and composed for real use, not mock-ups.</p>
+            </article>
+            <article class="lux-step">
+              <h3>Back-end development</h3>
+              <p>The engine underneath — security, data and integrations that stay quiet when traffic arrives.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lux-section lux-theme-light lux-stack" aria-labelledby="stack-title" data-reveal>
+        <div class="lux-wrap lux-center">
+          <p class="lux-kicker">Stack</p>
+          <h2 id="stack-title" class="lux-title" data-split>Technology, chosen not collected.</h2>
+          <p class="lux-lead">Modern frameworks where they earn their keep — and boring, proven tools where they keep you safe.</p>
+        </div>
+        <div class="logo-slider-wrapper overflow-hidden">
+          <div class="logo-row slider-right-to-left">
+            <div class="logo-slide">
+              <img src="images/tech/angular.webp" alt="Angular" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/react.webp" alt="React" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/next-js.webp" alt="Next.js" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/vue.webp" alt="Vue" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/html5.webp" alt="HTML5" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/css3.webp" alt="CSS3" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/bootstrap.webp" alt="Bootstrap" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/js5.webp" alt="JavaScript" width="124" height="28" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-slide">
+              <img src="images/tech/angular.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/react.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/next-js.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/vue.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/html5.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/css3.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/bootstrap.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/js5.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="logo-row slider-left-to-right mt-4">
+            <div class="logo-slide">
+              <img src="images/tech/laravel.webp" alt="Laravel" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/react-native.webp" alt="React Native" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/typescript.webp" alt="TypeScript" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/node.webp" alt="Node.js" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/php.webp" alt="PHP" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/play.webp" alt="Play Framework" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/post.webp" alt="PostgreSQL" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/dotnet.webp" alt=".NET" width="124" height="28" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-slide">
+              <img src="images/tech/laravel.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/react-native.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/typescript.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/node.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/php.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/play.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/post.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+              <img src="images/tech/dotnet.webp" alt="" width="124" height="28" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lux-section lux-theme-dark" aria-labelledby="voices-title" data-reveal>
+        <div class="lux-wrap">
+          <p class="lux-kicker">Clients</p>
+          <h2 id="voices-title" class="lux-title" data-split>People like working with us.</h2>
+          <p class="lux-lead">Professionalism, held through the whole engagement — not just the pitch.</p>
+          <div class="lux-voices-grid">
+            <blockquote class="lux-quote">
+              <div class="lux-stars" aria-label="4.5 out of 5 stars">★★★★☆</div>
+              <p>Working with this team has been an absolute pleasure. They understood our requirements perfectly and delivered a solution that exceeded expectations. Their professionalism, clear communication and technical expertise truly set them apart.</p>
+              <footer>
+                <img src="images/avatars/profile-pic.jpg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                <span>Amit Sharma</span>
+              </footer>
+            </blockquote>
+            <blockquote class="lux-quote">
+              <div class="lux-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>We needed a scalable platform to manage our growing operations. They designed and developed an excellent system, and guided us at every step with practical insight. Innovation, without theatre.</p>
+              <footer>
+                <img src="images/avatars/profile-pic.jpg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                <span>Priya Verma</span>
+              </footer>
+            </blockquote>
+            <blockquote class="lux-quote">
+              <div class="lux-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>From concept to launch, the level of detail, timely delivery and ongoing support has been outstanding. Our application now runs more efficiently, and our users are happier than ever.</p>
+              <footer>
+                <img src="images/avatars/profile-pic.jpg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                <span>Rohit Khanna</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="lux-section lux-theme-light" aria-labelledby="faq-title" data-reveal>
+        <div class="lux-wrap">
+          <p class="lux-kicker">Questions</p>
+          <h2 id="faq-title" class="lux-title" data-split>Straightforward answers.</h2>
+          <p class="lux-lead">If you are choosing an IT company in Delhi, start here. A conversation can follow.</p>
+          <div class="lux-faq-list">
+            <details open>
+              <summary>What does BlueByte IT Solutions build?</summary>
+              <p>We design and develop custom software, websites, mobile apps, eCommerce platforms, cloud infrastructure and SEO-led digital marketing for businesses in Delhi NCR and across India.</p>
+            </details>
+            <details>
+              <summary>How long does a typical project take?</summary>
+              <p>A marketing website often ships in four to eight weeks. Product and software work depends on scope; after discovery we give a dated plan with milestones rather than a vague range.</p>
+            </details>
+            <details>
+              <summary>Do you work with startups as well as established companies?</summary>
+              <p>Yes. Early teams get a tight, launchable slice. Larger organisations get architecture, integrations and the care a live system deserves.</p>
+            </details>
+            <details>
+              <summary>How do you price software and web work?</summary>
+              <p>Pricing is transparent and scoped. After a short brief we share a written proposal — what is included, what is not, and how change is handled — before any build starts.</p>
+            </details>
+            <details>
+              <summary>Can you improve an existing website or product?</summary>
+              <p>We regularly take over legacy code, slow sites and unfinished apps. The first step is an audit of performance, SEO, security and UX, then a staged plan rather than a risky rewrite.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="lux-section lux-theme-light" aria-labelledby="journal-title" data-reveal>
+        <div class="lux-wrap">
+          <div class="lux-journal-head">
+            <div>
+              <p class="lux-kicker">Journal</p>
+              <h2 id="journal-title" class="lux-title" data-split>Notes from the studio.</h2>
+              <p class="lux-lead">Practical writing on web, commerce and engineering — not recycled slogans.</p>
+            </div>
+            <a class="lux-btn lux-btn-ink" href="blogs.html">All articles</a>
+          </div>
+          <div class="lux-posts">
+            <a class="lux-post" href="5-must-have-integrations-for-ecommerce-success.html">
+              <img src="images/blog-4.webp" alt="Integrations that support eCommerce operations" width="640" height="400" loading="lazy" decoding="async">
+              <div class="lux-post-body">
+                <time datetime="2025-08-26">26 August 2025</time>
+                <h3>5 must-have integrations for eCommerce success</h3>
+                <p>The systems behind a store matter as much as the catalogue. A short guide to the connections that keep orders moving.</p>
+              </div>
+            </a>
+            <a class="lux-post" href="what-is-web-development-complete-beginner-guide-2026.html">
+              <img src="images/blog-web-development-guide-2026.png" alt="Beginner guide to web development" width="640" height="400" loading="lazy" decoding="async">
+              <div class="lux-post-body">
+                <time datetime="2025-08-26">26 August 2025</time>
+                <h3>What is web development? A complete beginner guide (2026)</h3>
+                <p>How sites and web apps are built, which technologies to learn first, and a calm roadmap for 2026.</p>
+              </div>
+            </a>
+            <a class="lux-post" href="top-frontend-technologies-to-use-in-2026.html">
+              <img src="images/blog-frontend-techs.webp" alt="Frontend technologies for 2026" width="640" height="400" loading="lazy" decoding="async">
+              <div class="lux-post-body">
+                <time datetime="2025-09-07">07 September 2025</time>
+                <h3>Top frontend technologies to use in 2026</h3>
+                <p>Frameworks, libraries and tools that still earn their place for speed, UX and search.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="lux-section lux-cta lux-theme-dark" aria-labelledby="cta-title" data-reveal>
+        <div class="lux-wrap lux-cta-inner">
+          <p class="lux-kicker">Begin</p>
+          <h2 id="cta-title" class="lux-title" data-split>Ready to have a conversation?</h2>
+          <p class="lux-lead">Tell us what you are building. We will answer with a clear next step — not a deck full of fog.</p>
+          <div class="lux-actions">
+            <a class="lux-btn lux-btn-gold" href="contact.html">Let's connect</a>
+            <a class="lux-btn lux-btn-ghost" href="https://wa.me/918178838292" target="_blank" rel="noopener noreferrer">WhatsApp us</a>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer wrap -->
     <footer class="footer-wrap bg-gray-900 text-gray-100 dark-footer font-sora">
       <div class="container pb-0">
@@ -1526,7 +982,7 @@
             </span>
             <div class="d-flex flex-column">
               <span class="h5 fw-600 mb-0">New Delhi</span>
-              <p class="text-gray-500 fw-500 mb-0">Contact with our team</p>
+              <p class="text-gray-500 fw-500 mb-0">Visit our studio</p>
             </div>
           </div>
         </div>
