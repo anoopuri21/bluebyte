@@ -20,15 +20,49 @@
  * It also appends a Cache-Control rule per HTML page to dist/_headers, which
  * cannot live on the /* block - see appendHtmlCacheRules() below.
  *
+ * Build tokens {{SITE_URL}} and {{GA_MEASUREMENT_ID}} in the source markup are
+ * resolved here, on the copies in dist/ only (the source keeps the tokens).
+ * Override them per build without editing this file:
+ *
+ *   SITE_URL=https://www.bluebyteitsolutions.com \
+ *   GA_MEASUREMENT_ID=G-XXXXXXXXXX \
+ *   npx wrangler deploy
+ *
+ * In Cloudflare Workers Builds those go in the project's *build* environment
+ * variables, not in .dev.vars and not in wrangler.jsonc.
+ *
  * Requires Node 16.7+ (uses fs.cpSync). No dependencies.
  */
 
-import { appendFileSync, cpSync, existsSync, readFileSync, rmSync, readdirSync } from "node:fs";
+import {
+  appendFileSync,
+  cpSync,
+  existsSync,
+  readFileSync,
+  rmSync,
+  readdirSync,
+  writeFileSync,
+} from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(ROOT, "dist");
+
+/**
+ * Build tokens left in the source markup. `scripts/seo.py apply` deliberately
+ * rewrites the real origin back into {{SITE_URL}}, so the tokens are the source
+ * of truth and get resolved here, at build time, on the copies in dist/.
+ */
+const ORIGIN_TOKEN = "{{SITE_URL}}";
+const GA_TOKEN = "{{GA_MEASUREMENT_ID}}";
+
+/** Canonical origin. Override per-build with SITE_URL=https://your.domain */
+const DEFAULT_SITE_URL = "https://www.bluebyteitsolutions.com";
+
+/** Google Analytics measurement ID. Empty means analytics stays off, which is
+ *  what js/analytics.js expects when no valid G-XXXX id is present. */
+const DEFAULT_GA_MEASUREMENT_ID = "";
 
 /** Repo-root entries that must never be published. */
 const IGNORE = new Set([
@@ -66,6 +100,99 @@ function shouldCopy(name) {
   if (IGNORE.has(name)) return false;
   if (name.startsWith(".")) return DOT_ALLOW.has(name);
   return true;
+}
+
+/** Mirrors scripts/seo.py's validate_site_url(): origin only, no trailing slash. */
+function resolveSiteUrl() {
+  const raw = (process.env.SITE_URL || DEFAULT_SITE_URL).trim().replace(/\/+$/, "");
+  if (/[<>"'\s]/.test(raw)) {
+    throw new Error("[build-dist] SITE_URL must not contain spaces or quotes");
+  }
+
+  let parsed;
+  try {
+    parsed = new URL(raw);
+  } catch {
+    throw new Error(`[build-dist] SITE_URL is not a valid origin: "${raw}"`);
+  }
+  if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+    throw new Error(`[build-dist] SITE_URL must start with https:// or http:// (got "${raw}")`);
+  }
+  if (!parsed.hostname) {
+    throw new Error(`[build-dist] SITE_URL is missing a hostname: "${raw}"`);
+  }
+  if (parsed.pathname && parsed.pathname !== "/") {
+    throw new Error(`[build-dist] SITE_URL must be an origin with no path (got "${raw}")`);
+  }
+  return raw;
+}
+
+function resolveGaId() {
+  const raw = (process.env.GA_MEASUREMENT_ID || DEFAULT_GA_MEASUREMENT_ID).trim();
+  if (raw && !/^G-[A-Z0-9]+$/.test(raw)) {
+    throw new Error(`[build-dist] GA_MEASUREMENT_ID must look like G-XXXXXXXXXX (got "${raw}")`);
+  }
+  return raw;
+}
+
+function* walk(dir) {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) yield* walk(full);
+    else if (entry.isFile()) yield full;
+  }
+}
+
+/**
+ * Resolve {{SITE_URL}} / {{GA_MEASUREMENT_ID}} in every text file under dist/.
+ *
+ * Files are read as buffers and only decoded when they actually contain a
+ * token, so images, fonts and video are never rewritten.
+ */
+function substituteTokens(origin, gaId) {
+  const needles = [Buffer.from(ORIGIN_TOKEN), Buffer.from(GA_TOKEN)];
+  let touched = 0;
+  let replacements = 0;
+
+  for (const file of walk(DIST)) {
+    const buffer = readFileSync(file);
+    if (!needles.some((needle) => buffer.includes(needle))) continue;
+
+    const text = buffer.toString("utf8");
+    const originHits = text.split(ORIGIN_TOKEN).length - 1;
+    const gaHits = text.split(GA_TOKEN).length - 1;
+
+    writeFileSync(
+      file,
+      text.split(ORIGIN_TOKEN).join(origin).split(GA_TOKEN).join(gaId)
+    );
+
+    touched += 1;
+    replacements += originHits + gaHits;
+  }
+
+  return { touched, replacements };
+}
+
+/** Fail the build rather than shipping a page with an unresolved token. */
+function assertNoTokensLeft() {
+  const needles = [Buffer.from(ORIGIN_TOKEN), Buffer.from(GA_TOKEN)];
+  const offenders = [];
+
+  for (const file of walk(DIST)) {
+    const buffer = readFileSync(file);
+    if (needles.some((needle) => buffer.includes(needle))) {
+      offenders.push(path.relative(DIST, file));
+    }
+  }
+
+  if (offenders.length > 0) {
+    throw new Error(
+      `[build-dist] unresolved build tokens in ${offenders.length} file(s): ` +
+        offenders.slice(0, 5).join(", ") +
+        (offenders.length > 5 ? ", ..." : "")
+    );
+  }
 }
 
 /**
@@ -130,6 +257,10 @@ function appendHtmlCacheRules() {
 }
 
 function main() {
+  // Validate first: a bad SITE_URL should fail before any copying happens.
+  const origin = resolveSiteUrl();
+  const gaId = resolveGaId();
+
   if (existsSync(DIST)) {
     rmSync(DIST, { recursive: true, force: true });
   }
@@ -188,6 +319,19 @@ function main() {
   console.log(
     `[build-dist] dist/_headers: ${headers.total} rules (${headers.appended} generated for HTML pages, limit ${MAX_HEADER_RULES})`
   );
+
+  const tokens = substituteTokens(origin, gaId);
+  console.log(
+    `[build-dist] ${ORIGIN_TOKEN} -> ${origin}, ${GA_TOKEN} -> ${gaId || "(empty, analytics off)"}` +
+      ` [${tokens.replacements} replacements in ${tokens.touched} files]`
+  );
+  assertNoTokensLeft();
 }
 
-main();
+try {
+  main();
+} catch (error) {
+  // Keep the deploy log readable: one clear line instead of a stack trace.
+  console.error(error?.message || String(error));
+  process.exit(1);
+}
