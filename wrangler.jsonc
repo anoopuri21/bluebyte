@@ -1,15 +1,27 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "bluebyte",
+  // Handles POST /api/contact (the old contactform.php endpoint). Every other
+  // request is forwarded to the static assets via the ASSETS binding.
+  "main": "./src/worker.js",
   "compatibility_date": "2026-09-26",
   "observability": {
     "enabled": true
+  },
+  // Non-secret defaults only. Secrets (RESEND_API_KEY / WEB3FORMS_ACCESS_KEY /
+  // CONTACT_WEBHOOK_URL) are set with `wrangler secret put <NAME>`.
+  "vars": {
+    "MAIL_TO": "info@bluebyteitsolutions.com,websitesexperts@gmail.com",
+    "FROM_EMAIL": "no-reply@bluebyteitsolutions.com",
+    "SUBJECT_PREFIX": "Contact Form - Bluebyte IT Solutions"
   },
   "assets": {
     // Static output directory produced by the build command below.
     // Do not point this at the repository root: wrangler writes its own
     // `.wrangler/` temp files there, which makes `wrangler dev` reload forever.
     "directory": "./dist",
+    // Exposes the asset collection to src/worker.js as env.ASSETS.
+    "binding": "ASSETS",
     // /about.html -> /about, /about -> serves about.html, / -> serves index.html
     "html_handling": "auto-trailing-slash",
     // Serve 404.html for unmatched routes.
