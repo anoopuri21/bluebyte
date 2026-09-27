@@ -104,10 +104,10 @@ test("falls back to the default recipients when MAIL_TO is unset", async () => {
   });
   const body = JSON.parse(calls[0].init.body);
   assert.deepEqual(body.to, [
-    "info@bluebyteitsolutions.com",
+    "info@bluebyteitinfosystem.com",
     "websitesexperts@gmail.com",
   ]);
-  assert.equal(body.from, "no-reply@bluebyteitsolutions.com");
+  assert.equal(body.from, "no-reply@bluebyteitinfosystem.com");
 });
 
 test("503 when no delivery method is configured", async () => {
@@ -203,11 +203,36 @@ test("legacy contactform.php path is handled identically", async () => {
   assert.equal(calls.length, 1);
 });
 
-test("GET on the contact endpoint is 405", async () => {
+test("POST /api/contact/ (trailing slash) is handled identically", async () => {
+  stubFetch();
+  const res = await worker.fetch(postRequest("/api/contact/", VALID), {
+    RESEND_API_KEY: "re_test",
+  });
+  assert.equal(res.status, 303);
+  assert.equal(res.headers.get("location"), `${SITE}/contact?sent=1`);
+  assert.equal(calls.length, 1);
+});
+
+test("GET on the contact endpoint redirects to /contact", async () => {
   stubFetch();
   const res = await worker.fetch(new Request(`${SITE}/api/contact`), {});
+  assert.equal(res.status, 302);
+  assert.equal(res.headers.get("location"), `${SITE}/contact`);
+  assert.equal(calls.length, 0);
+});
+
+test("GET /api/contact/ (trailing slash) also redirects to /contact", async () => {
+  stubFetch();
+  const res = await worker.fetch(new Request(`${SITE}/api/contact/`), {});
+  assert.equal(res.status, 302);
+  assert.equal(res.headers.get("location"), `${SITE}/contact`);
+});
+
+test("PUT on the contact endpoint is 405", async () => {
+  stubFetch();
+  const res = await worker.fetch(new Request(`${SITE}/api/contact`, { method: "PUT" }), {});
   assert.equal(res.status, 405);
-  assert.equal(res.headers.get("allow"), "POST");
+  assert.equal(res.headers.get("allow"), "GET, HEAD, POST");
 });
 
 test("everything else is forwarded to the ASSETS binding", async () => {

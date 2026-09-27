@@ -703,14 +703,14 @@ def gen_contact():
             <h2 class="lux-title">Write, call or visit.</h2>
             <div class="lux-prose">
               <p><strong>Phone.</strong> <a href="tel:+918178838292">+91 81788 38292</a></p>
-              <p><strong>Email.</strong> <a href="mailto:info@bluebyteitsolutions.com">info@bluebyteitsolutions.com</a></p>
+              <p><strong>Email.</strong> <a href="mailto:info@bluebyteitinfosystem.com">info@bluebyteitinfosystem.com</a></p>
               <p><strong>WhatsApp.</strong> <a href="https://wa.me/918178838292" rel="noopener noreferrer" target="_blank">Message the studio</a></p>
               <p><strong>Address.</strong> MS 83, Mohan Garden, Uttam Nagar, New Delhi 110059, India.</p>
             </div>
           </div>
           <div>
             <h2 class="lux-title" style="font-size:1.5rem">Send a brief</h2>
-            <form class="lux-form" method="post" action="/api/contact">
+            <form class="lux-form" id="contactForm" method="post" action="/api/contact">
               <div class="lux-honeypot" aria-hidden="true">
                 <label for="website">Leave this field empty</label>
                 <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
@@ -742,14 +742,45 @@ def gen_contact():
             </form>
             <script>
               (function () {{
+                var form = document.getElementById('contactForm');
                 var box = document.getElementById('formResult');
-                if (!box) return;
-                var params = new URLSearchParams(window.location.search);
-                if (params.get('sent') === '1') {{
-                  box.innerHTML = '<div class="alert alert-success" role="alert">Thank you. Your message has been sent. We will reply shortly.</div>';
-                }} else if (params.get('error') === '1') {{
-                  box.innerHTML = '<div class="alert alert-danger" role="alert">We could not send that just now. Try again, or email <a href="mailto:info@bluebyteitsolutions.com">info@bluebyteitsolutions.com</a>.</div>';
+                if (!form || !box) return;
+                var mail = '<a href="mailto:info@bluebyteitinfosystem.com">info@bluebyteitinfosystem.com</a>';
+                var fail = 'We could not send that just now. Try again, or email ' + mail + '.';
+                function show(ok, html) {{
+                  box.innerHTML = '<div class="alert alert-' + (ok ? 'success' : 'danger') + '" role="alert">' + html + '</div>';
                 }}
+                var params = new URLSearchParams(window.location.search);
+                if (params.get('sent') === '1') show(true, 'Thank you. Your message has been sent. We will reply shortly.');
+                else if (params.get('error') === '1') show(false, fail);
+                form.addEventListener('submit', function (event) {{
+                  event.preventDefault();
+                  var btn = form.querySelector('[type="submit"]');
+                  if (btn) btn.disabled = true;
+                  box.innerHTML = '<p role="status">Sending…</p>';
+                  fetch('/api/contact', {{
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {{ Accept: 'application/json', 'X-Requested-With': 'XMLHttpRequest' }}
+                  }}).then(function (res) {{
+                    return res.json().then(function (data) {{
+                      return {{ ok: res.ok, data: data }};
+                    }}).catch(function () {{
+                      return {{ ok: res.ok, data: null }};
+                    }});
+                  }}).then(function (result) {{
+                    if (result.ok && result.data && result.data.ok) {{
+                      show(true, 'Thank you. Your message has been sent. We will reply shortly.');
+                      form.reset();
+                    }} else {{
+                      show(false, (result.data && result.data.error) || fail);
+                    }}
+                  }}).catch(function () {{
+                    show(false, fail);
+                  }}).then(function () {{
+                    if (btn) btn.disabled = false;
+                  }});
+                }});
               }})();
             </script>
           </div>

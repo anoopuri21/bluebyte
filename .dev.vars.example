@@ -5,7 +5,7 @@
 
 # Option 1 - Resend (https://resend.com).
 # Best if you want mail sent from your own domain; requires the FROM_EMAIL
-# domain (no-reply@bluebyteitsolutions.com) to be verified in Resend.
+# domain (no-reply@bluebyteitinfosystem.com) to be verified in Resend.
 # RESEND_API_KEY=re_xxxxxxxxxxxxxxxx
 
 # Option 2 - Web3Forms (https://web3forms.com).

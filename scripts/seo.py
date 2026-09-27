@@ -274,7 +274,7 @@ def json_ld(slug: str, meta: dict[str, str]) -> str:
                 "url": ORIGIN_TOKEN + "/", "logo": {
                     "@type": "ImageObject", "url": ORIGIN_TOKEN + "/images/logo.webp",
                 },
-                "email": "info@bluebyteitsolutions.com", "telephone": "+91-8178838292",
+                "email": "info@bluebyteitinfosystem.com", "telephone": "+91-8178838292",
                 "sameAs": [
                     "https://www.facebook.com/profile.php?id=61580436123773",
                     "https://www.linkedin.com/company/110187139",
@@ -284,7 +284,7 @@ def json_ld(slug: str, meta: dict[str, str]) -> str:
             {
                 "@type": "LocalBusiness", "@id": ORIGIN_TOKEN + "/#localbusiness",
                 "name": BRAND, "url": ORIGIN_TOKEN + "/", "image": image_url,
-                "telephone": "+91-8178838292", "email": "info@bluebyteitsolutions.com",
+                "telephone": "+91-8178838292", "email": "info@bluebyteitinfosystem.com",
                 "address": {
                     "@type": "PostalAddress", "streetAddress": "MS 83, Mohan Garden",
                     "addressLocality": "Uttam Nagar", "addressRegion": "Delhi",

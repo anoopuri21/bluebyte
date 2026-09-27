@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit']))
 {
-	$toemail = "info@bluebyteitsolutions.com,websitesexperts@gmail.com";
+	$toemail = "info@bluebyteitinfosystem.com,websitesexperts@gmail.com";
 	$strMessage='<table width="650px" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#ddd" bgcolor="#ffffff" style=" border-collapse:collapse;font-family: sans-serif;">
 		<tr>
 			<td height="45" colspan="2" bgcolor="">
@@ -33,7 +33,7 @@ if(isset($_POST['submit']))
 		</tr>
 	</table>';
 	$strSubject = "Contact Form - Bluebyte IT Solutions ";
-	$email = "no-reply@bluebyteitsolutions.com";
+	$email = "no-reply@bluebyteitinfosystem.com";
 	$header = "From: " . $_POST['firstName'] . " <" . $email . ">\r\n";
 	$header .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 	$mail = mail($toemail, $strSubject, $strMessage, $header);
