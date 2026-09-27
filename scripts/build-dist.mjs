@@ -58,7 +58,7 @@ const ORIGIN_TOKEN = "{{SITE_URL}}";
 const GA_TOKEN = "{{GA_MEASUREMENT_ID}}";
 
 /** Canonical origin. Override per-build with SITE_URL=https://your.domain */
-const DEFAULT_SITE_URL = "https://www.bluebyteitsolutions.com";
+const DEFAULT_SITE_URL = "https://bluebyteitinfosystem.com";
 
 /** Google Analytics measurement ID. Empty means analytics stays off, which is
  *  what js/analytics.js expects when no valid G-XXXX id is present. */
