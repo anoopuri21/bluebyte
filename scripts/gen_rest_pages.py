@@ -703,7 +703,7 @@ def gen_contact():
             <h2 class="lux-title">Write, call or visit.</h2>
             <div class="lux-prose">
               <p><strong>Phone.</strong> <a href="tel:+918178838292">+91 81788 38292</a></p>
-              <p><strong>Email.</strong> <a href="mailto:info@bluebyteitsolutions.com">info@bluebyteitsolutions.com</a></p>
+              <p><strong>Email.</strong> <a href="mailto:info@bluebyteitinfosystem.com">info@bluebyteitinfosystem.com</a></p>
               <p><strong>WhatsApp.</strong> <a href="https://wa.me/918178838292" rel="noopener noreferrer" target="_blank">Message the studio</a></p>
               <p><strong>Address.</strong> MS 83, Mohan Garden, Uttam Nagar, New Delhi 110059, India.</p>
             </div>
@@ -748,7 +748,7 @@ def gen_contact():
                 if (params.get('sent') === '1') {{
                   box.innerHTML = '<div class="alert alert-success" role="alert">Thank you. Your message has been sent. We will reply shortly.</div>';
                 }} else if (params.get('error') === '1') {{
-                  box.innerHTML = '<div class="alert alert-danger" role="alert">We could not send that just now. Try again, or email <a href="mailto:info@bluebyteitsolutions.com">info@bluebyteitsolutions.com</a>.</div>';
+                  box.innerHTML = '<div class="alert alert-danger" role="alert">We could not send that just now. Try again, or email <a href="mailto:info@bluebyteitinfosystem.com">info@bluebyteitinfosystem.com</a>.</div>';
                 }}
               }})();
             </script>

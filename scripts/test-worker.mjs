@@ -104,10 +104,10 @@ test("falls back to the default recipients when MAIL_TO is unset", async () => {
   });
   const body = JSON.parse(calls[0].init.body);
   assert.deepEqual(body.to, [
-    "info@bluebyteitsolutions.com",
+    "info@bluebyteitinfosystem.com",
     "websitesexperts@gmail.com",
   ]);
-  assert.equal(body.from, "no-reply@bluebyteitsolutions.com");
+  assert.equal(body.from, "no-reply@bluebyteitinfosystem.com");
 });
 
 test("503 when no delivery method is configured", async () => {

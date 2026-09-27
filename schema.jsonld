@@ -10,7 +10,7 @@
         "@type": "ImageObject",
         "url": "{{SITE_URL}}/images/logo.webp"
       },
-      "email": "info@bluebyteitsolutions.com",
+      "email": "info@bluebyteitinfosystem.com",
       "telephone": "+91-8178838292",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61580436123773",
@@ -25,7 +25,7 @@
       "url": "{{SITE_URL}}/",
       "image": "{{SITE_URL}}/images/og-image.webp",
       "telephone": "+91-8178838292",
-      "email": "info@bluebyteitsolutions.com",
+      "email": "info@bluebyteitinfosystem.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "MS 83, Mohan Garden",

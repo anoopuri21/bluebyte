@@ -50,8 +50,8 @@ const MAX_BODY_BYTES = 64 * 1024;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-const DEFAULT_MAIL_TO = "info@bluebyteitsolutions.com,websitesexperts@gmail.com";
-const DEFAULT_FROM_EMAIL = "no-reply@bluebyteitsolutions.com";
+const DEFAULT_MAIL_TO = "info@bluebyteitinfosystem.com,websitesexperts@gmail.com";
+const DEFAULT_FROM_EMAIL = "no-reply@bluebyteitinfosystem.com";
 
 /** Strip control characters (CRLF injection) and clamp length. */
 function clean(value, max) {

@@ -11,8 +11,8 @@
   // Non-secret defaults only. Secrets (RESEND_API_KEY / WEB3FORMS_ACCESS_KEY /
   // CONTACT_WEBHOOK_URL) are set with `wrangler secret put <NAME>`.
   "vars": {
-    "MAIL_TO": "info@bluebyteitsolutions.com,websitesexperts@gmail.com",
-    "FROM_EMAIL": "no-reply@bluebyteitsolutions.com",
+    "MAIL_TO": "info@bluebyteitinfosystem.com,websitesexperts@gmail.com",
+    "FROM_EMAIL": "no-reply@bluebyteitinfosystem.com",
     "SUBJECT_PREFIX": "Contact Form - Bluebyte IT Solutions"
   },
   "assets": {
