@@ -15,7 +15,7 @@ FOOTER = INDEX[INDEX.find("    <!-- footer wrap -->") :]
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gen_service_pages import ico  # noqa: E402
+from gen_service_pages import ico, recent_blogs_schema, recent_blogs_section  # noqa: E402
 
 
 def clean_dashes(text: str) -> str:
@@ -474,7 +474,8 @@ def industry_html(page: dict) -> str:
         {
             "@type": "FAQPage",
             "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in page["faqs"]],
-        }
+        },
+        recent_blogs_schema(),
     ]
     schema = webpage_schema(page["slug"], page["title"], page["description"], page["image"], extras)
     intro = page["intro"]
@@ -569,6 +570,7 @@ def industry_html(page: dict) -> str:
           </div>
         </div>
       </section>
+{recent_blogs_section()}
       <section class="lux-section lux-cta lux-theme-dark" data-reveal>
         <div class="lux-wrap lux-cta-inner">
           <p class="lux-kicker">Begin</p>
@@ -871,11 +873,15 @@ def wrap_blogs():
             print("skip missing", href)
             continue
         raw = src.read_text(encoding="utf-8")
-        m = re.search(r"<article[^>]*>([\s\S]*?)</article>", raw)
+        m = re.search(r'<div class="lux-article">([\s\S]*?)</div>\s*</div>\s*</section>', raw)
+        if not m:
+            m = re.search(r"<article[^>]*>([\s\S]*?)</article>", raw)
         if not m:
             print("no article", href)
             continue
         inner = m.group(1)
+        inner = re.sub(r"<h1[^>]*>[\s\S]*?</h1>", "", inner)
+        inner = re.sub(r'<section class="lux-hero[\s\S]*?</section>', "", inner)
         inner = re.sub(r'class="[^"]*"', "", inner)
         inner = clean_dashes(inner)
         h1m = re.search(r"<h1[^>]*>(.*?)</h1>", raw, re.S)

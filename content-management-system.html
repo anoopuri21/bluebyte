@@ -72,7 +72,12 @@
       },
       "mainEntity": {
         "@id": "{{SITE_URL}}/content-management-system#service"
-      }
+      },
+      "relatedLink": [
+        "{{SITE_URL}}/mcp-enterprise-integrations-2026",
+        "{{SITE_URL}}/rag-enterprise-ai-search-2026",
+        "{{SITE_URL}}/llm-testing-quality-engineering-2026"
+      ]
     },
     {
       "@type": "Service",
@@ -258,6 +263,32 @@
             "@type": "Answer",
             "text": "Only if you ask for a custom admin. Otherwise we prefer platforms you can hire for later."
           }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Recent studio notes",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "{{SITE_URL}}/mcp-enterprise-integrations-2026",
+          "name": "MCP Enterprise Integrations: A Security-First Guide"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "{{SITE_URL}}/rag-enterprise-ai-search-2026",
+          "name": "RAG for Enterprise AI Search: A Practical Build Guide"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "{{SITE_URL}}/llm-testing-quality-engineering-2026",
+          "name": "LLM Testing and Quality Engineering: A 2026 Guide"
         }
       ]
     }
@@ -633,6 +664,7 @@
             <a href="#include">Included</a>
             <a href="#method">How we work</a>
             <a href="#faq">Questions</a>
+            <a href="#journal">Journal</a>
           </nav>
         </div>
       </section>
@@ -820,6 +852,43 @@
             <a class="lux-chip" href="web-development.html">Web development <span aria-hidden="true">→</span></a>
             <a class="lux-chip" href="ecommerce.html">eCommerce <span aria-hidden="true">→</span></a>
             <a class="lux-chip" href="digital-marketing.html">Digital marketing <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="journal" class="lux-section lux-theme-light" aria-labelledby="journal-title" data-reveal>
+        <div class="lux-wrap">
+          <p class="lux-kicker">Journal</p>
+          <h2 id="journal-title" class="lux-title" data-split>Recent notes from the studio.</h2>
+          <p class="lux-lead">Three current pieces on enterprise AI. Written this month, not recycled roundups.</p>
+          <div class="lux-posts lux-posts-3">
+            <a class="lux-post" href="mcp-enterprise-integrations-2026.html">
+              <img src="images/blog-mcp-enterprise-2026.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+              <div class="lux-post-body">
+                <time datetime="2026-09-26">26 September 2026</time>
+                <h3>MCP Enterprise Integrations: A Security-First Guide</h3>
+                <p>How to plan safe enterprise AI tool integrations with clear permissions.</p>
+              </div>
+            </a>
+            <a class="lux-post" href="rag-enterprise-ai-search-2026.html">
+              <img src="images/blog-rag-enterprise-search-2026.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+              <div class="lux-post-body">
+                <time datetime="2026-09-26">26 September 2026</time>
+                <h3>RAG for Enterprise AI Search: A Practical Build Guide</h3>
+                <p>Prepare documents, preserve access rules and measure search quality.</p>
+              </div>
+            </a>
+            <a class="lux-post" href="llm-testing-quality-engineering-2026.html">
+              <img src="images/blog-llm-quality-engineering-2026.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+              <div class="lux-post-body">
+                <time datetime="2026-09-26">26 September 2026</time>
+                <h3>LLM Testing and Quality Engineering: A 2026 Guide</h3>
+                <p>Evaluate responses, build test sets and use release gates for production AI.</p>
+              </div>
+            </a>
+          </div>
+          <div class="lux-actions" style="margin-top:1.6rem">
+            <a class="lux-btn lux-btn-ink" href="blogs.html">All journal posts</a>
           </div>
         </div>
       </section>

@@ -58,6 +58,83 @@ def ico(name: str) -> str:
     )
 
 
+# Newest three journal posts only. Older 2025 articles stay off these hubs.
+RECENT_BLOGS = [
+    (
+        "mcp-enterprise-integrations-2026.html",
+        "MCP Enterprise Integrations: A Security-First Guide",
+        "26 September 2026",
+        "2026-09-26",
+        "images/blog-mcp-enterprise-2026.webp",
+        "How to plan safe enterprise AI tool integrations with clear permissions.",
+    ),
+    (
+        "rag-enterprise-ai-search-2026.html",
+        "RAG for Enterprise AI Search: A Practical Build Guide",
+        "26 September 2026",
+        "2026-09-26",
+        "images/blog-rag-enterprise-search-2026.webp",
+        "Prepare documents, preserve access rules and measure search quality.",
+    ),
+    (
+        "llm-testing-quality-engineering-2026.html",
+        "LLM Testing and Quality Engineering: A 2026 Guide",
+        "26 September 2026",
+        "2026-09-26",
+        "images/blog-llm-quality-engineering-2026.webp",
+        "Evaluate responses, build test sets and use release gates for production AI.",
+    ),
+]
+
+
+def recent_blogs_schema() -> dict:
+    return {
+        "@type": "ItemList",
+        "name": "Recent studio notes",
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "numberOfItems": len(RECENT_BLOGS),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "url": "{{SITE_URL}}/" + href.replace(".html", ""),
+                "name": title,
+            }
+            for i, (href, title, _d, _iso, _img, _ex) in enumerate(RECENT_BLOGS, 1)
+        ],
+    }
+
+
+def recent_blogs_section() -> str:
+    cards = []
+    for href, title, date, iso, img, excerpt in RECENT_BLOGS:
+        cards.append(
+            f"""            <a class="lux-post" href="{href}">
+              <img src="{img}" alt="" width="640" height="400" loading="lazy" decoding="async">
+              <div class="lux-post-body">
+                <time datetime="{iso}">{date}</time>
+                <h3>{title}</h3>
+                <p>{excerpt}</p>
+              </div>
+            </a>"""
+        )
+    joined = "\n".join(cards)
+    return f"""      <section id="journal" class="lux-section lux-theme-light" aria-labelledby="journal-title" data-reveal>
+        <div class="lux-wrap">
+          <p class="lux-kicker">Journal</p>
+          <h2 id="journal-title" class="lux-title" data-split>Recent notes from the studio.</h2>
+          <p class="lux-lead">Three current pieces on enterprise AI. Written this month, not recycled roundups.</p>
+          <div class="lux-posts lux-posts-3">
+{joined}
+          </div>
+          <div class="lux-actions" style="margin-top:1.6rem">
+            <a class="lux-btn lux-btn-ink" href="blogs.html">All journal posts</a>
+          </div>
+        </div>
+      </section>
+"""
+
+
 PAGES = [
     {
         "file": "software-development.html",
@@ -656,6 +733,10 @@ def schema_block(page: dict) -> str:
             ],
         },
         {"@type": "FAQPage", "@id": url + "#faq", "mainEntity": faqs},
+        recent_blogs_schema(),
+    ]
+    graph[1]["relatedLink"] = [
+        "{{SITE_URL}}/" + href.replace(".html", "") for href, *_ in RECENT_BLOGS
     ]
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, indent=2, ensure_ascii=True).replace("\\/", "/")
 
@@ -798,6 +879,7 @@ def page_html(page: dict) -> str:
             <a href="#include">Included</a>
             <a href="#method">How we work</a>
             <a href="#faq">Questions</a>
+            <a href="#journal">Journal</a>
           </nav>
         </div>
       </section>
@@ -893,6 +975,7 @@ def page_html(page: dict) -> str:
         </div>
       </section>
 
+{recent_blogs_section()}
       <section class="lux-section lux-cta lux-theme-dark" aria-labelledby="cta-title" data-reveal>
         <div class="lux-wrap lux-cta-inner">
           <p class="lux-kicker">Begin</p>

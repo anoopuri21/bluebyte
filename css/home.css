@@ -1063,6 +1063,15 @@
     min-height: 16rem;
   }
 
+  .lux-posts-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .lux-posts-3 .lux-post:first-child img {
+    height: 12.5rem;
+    min-height: 0;
+  }
+
   .lux-bento {
     grid-template-columns: repeat(4, 1fr);
   }
