@@ -9,7 +9,12 @@
  * Routes
  *   POST /api/contact       - the endpoint the form submits to
  *   POST /contactform.php   - legacy alias, same handler
+ *   GET  /api/contact       - 302 to /contact (browsers opening the URL)
  *   anything else           - forwarded to the static assets (keeps 404.html)
+ *
+ * wrangler.jsonc sets assets.run_worker_first for these paths. Without it,
+ * Cloudflare serves assets first and a browser form POST (a navigation request)
+ * never reaches this script — static assets answer 405 Method Not Allowed.
  *
  * Delivery (first one configured wins)
  *   1. RESEND_API_KEY        - email via https://resend.com
@@ -23,8 +28,13 @@
  * rather than pretending the message was delivered.
  */
 
-/** Endpoints handled by this Worker. */
+/** Endpoints handled by this Worker. Trailing slashes are stripped first. */
 const CONTACT_PATHS = new Set(["/api/contact", "/contactform.php"]);
+
+function normalizePath(pathname) {
+  if (pathname.length > 1 && pathname.endsWith("/")) return pathname.slice(0, -1);
+  return pathname;
+}
 
 /** Field length caps. Anything longer is truncated, never rejected. */
 const LIMITS = {
@@ -230,10 +240,16 @@ function redirect(request, query) {
 async function handleContact(request, env) {
   const json = wantsJson(request);
 
+  if (request.method === "GET" || request.method === "HEAD") {
+    // Opening /api/contact in a browser is not a form submit. Send visitors
+    // to the contact page instead of a raw 405.
+    return Response.redirect(new URL("/contact", request.url).toString(), 302);
+  }
+
   if (request.method !== "POST") {
     return new Response("Method Not Allowed", {
       status: 405,
-      headers: { Allow: "POST" },
+      headers: { Allow: "GET, HEAD, POST" },
     });
   }
 
@@ -303,7 +319,7 @@ export default {
   async fetch(request, env) {
     const { pathname } = new URL(request.url);
 
-    if (CONTACT_PATHS.has(pathname)) {
+    if (CONTACT_PATHS.has(normalizePath(pathname))) {
       return handleContact(request, env);
     }
 

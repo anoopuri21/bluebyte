@@ -25,7 +25,15 @@
     // /about.html -> /about, /about -> serves about.html, / -> serves index.html
     "html_handling": "auto-trailing-slash",
     // Serve 404.html for unmatched routes.
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    // Required for the contact form. compatibility_date >= 2025-04-01 plus
+    // not_found_handling: "404-page" makes browser *navigation* requests skip
+    // the Worker and hit the asset layer. An HTML form POST is a navigation
+    // request (Sec-Fetch-Mode: navigate), and static assets only allow GET/HEAD,
+    // so POST /api/contact was returning 405 Method Not Allowed and never
+    // reaching src/worker.js. Restricting this to the form paths keeps CSS,
+    // images and HTML off the Worker bill.
+    "run_worker_first": ["/api/*", "/contactform.php"]
   },
   // Wrangler runs this before every `wrangler deploy` (and `wrangler dev`),
   // so a plain `npx wrangler deploy` - with no separate build command
